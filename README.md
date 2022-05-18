@@ -464,3 +464,10 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+
+
+### PROTOTIPO: "FIGMA"
+* Tutorial 1: https://www.youtube.com/watch?v=xGL6wv4CmCk
+* Tutorial 2: Slider funcional: https://www.youtube.com/watch?v=va_4klLW7R4
+### HISTORIAS DE USUARIO: "TRELLO"
+* Tutorial 1: Historias de Usuario: https://www.youtube.com/watch?v=FJuq_lrM5Cc
