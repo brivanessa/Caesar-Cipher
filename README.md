@@ -475,8 +475,8 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * Tutorial 1: Historias de Usuario: https://www.youtube.com/watch?v=FJuq_lrM5Cc
 ### ACTUALIZAR GIT
 * Tutorial para actualizar git https://diarioinforme.com/como-verificar-y-actualizar-su-version-de-git/ pero no se actualizaba use un comando con PATH y funcionó: https://www.youtube.com/watch?v=ejDKvKXHdk8
-* Que es PHAT? https://www.java.com/es/download/help/path_es.html (IDU - M)
+* Que es PHAT? https://www.java.com/es/download/help/path_es.html (NI - I)
 * Que es GIT? https://git-scm.com/about (NO)
 * Instalar git en windows: https://curriculum.laboratoria.la/es/topics/scm/01-git/02-install (YES- L) // git bash 
-* Instalar git en MAC: https://www.youtube.com/watch?v=0elQRkxyQYs (YES - M)
+* Instalar git en MAC: https://www.youtube.com/watch?v=0elQRkxyQYs (YES - I)
 * 
