@@ -469,8 +469,14 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 ### PROTOTIPO: "FIGMA"
 * Tutorial 1: https://www.youtube.com/watch?v=xGL6wv4CmCk
 * Tutorial 2: Slider funcional: https://www.youtube.com/watch?v=va_4klLW7R4
+* Mi prototipo: https://www.figma.com/file/GUVA0qH6d6cGcrPEUyINKq/Untitled?node-id=3%3A5
+* 
 ### HISTORIAS DE USUARIO: "TRELLO"
 * Tutorial 1: Historias de Usuario: https://www.youtube.com/watch?v=FJuq_lrM5Cc
 ### ACTUALIZAR GIT
 * Tutorial para actualizar git https://diarioinforme.com/como-verificar-y-actualizar-su-version-de-git/ pero no se actualizaba use un comando con PATH y funcionó: https://www.youtube.com/watch?v=ejDKvKXHdk8
+* Que es PHAT? https://www.java.com/es/download/help/path_es.html (IDU - M)
+* Que es GIT? https://git-scm.com/about (NO)
+* Instalar git en windows: https://curriculum.laboratoria.la/es/topics/scm/01-git/02-install (YES- L) // git bash 
+* Instalar git en MAC: https://www.youtube.com/watch?v=0elQRkxyQYs (YES - M)
 * 
