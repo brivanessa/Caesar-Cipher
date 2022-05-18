@@ -471,3 +471,6 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * Tutorial 2: Slider funcional: https://www.youtube.com/watch?v=va_4klLW7R4
 ### HISTORIAS DE USUARIO: "TRELLO"
 * Tutorial 1: Historias de Usuario: https://www.youtube.com/watch?v=FJuq_lrM5Cc
+### ACTUALIZAR GIT
+* Tutorial para actualizar git https://diarioinforme.com/como-verificar-y-actualizar-su-version-de-git/ pero no se actualizaba use un comando con PATH y funcionó: https://www.youtube.com/watch?v=ejDKvKXHdk8
+* 
