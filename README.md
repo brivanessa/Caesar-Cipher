@@ -479,4 +479,5 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * Que es GIT? https://git-scm.com/about (NO)
 * Instalar git en windows: https://curriculum.laboratoria.la/es/topics/scm/01-git/02-install (YES- L) // git bash 
 * Instalar git en MAC: https://www.youtube.com/watch?v=0elQRkxyQYs (YES - I)
-* 
+### LINK FIGMA
+* LINK DE MI PROTOTIPO: https://www.figma.com/proto/GUVA0qH6d6cGcrPEUyINKq/Untitled?node-id=34%3A25&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A5
