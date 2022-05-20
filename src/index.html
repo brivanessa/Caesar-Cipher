@@ -11,7 +11,7 @@
   </header>
 
   <body>
-    <div id="root">
+    <div id="root"> <!IDK>
     </div>
 
     <section>
@@ -22,13 +22,42 @@
           <p>A lo largo de la historia la criptografía y su mala/buena utilización estuvieron implicados en la conspiración que condujo a condenas, encarcelamientos e incluso ejecuciones.</p>
           <p>Usando el cifrado por sustitución  descifraremos la identidad de 2 personajes de la historia.</p>  <br>
           <input type="button" value="GO!"  id="buttonPlay">
-          <input type="button" value="💡 "  id="buttonIdea1">
+          <input type="button" value="💡"  id="buttonIdea1">
           <!input type="button" value="💡"  id="buttonPlay" onclick="mensaje1()"> <!onclic solo funciona con script.js (creo que es pq no tiene type (module)) aunque igual el onclick inline en html no es una muy buena practica ni sostenible en el tiempo>
-          <input type="button" value="💡 "  id="buttonIdea2">
+          <input type="button" value="💡"  id="buttonIdea2">
         </div>
         
+       <div id="person1" class="contenedor1">
+         <p>XXXX XXXX</p>
+         <img src="MH.png" alt="MDN" class="Clock" width="290" height="200") > <!class es el atributo que muestra descripción de la imagen al mantener el raton sobre la imagen>
+         <p>Clave: Died at age 41</p> 
+         <p>Bailarina, cortesana y espía que durante la Primera Guerra Mundial usó la criptografía musical en sus labores de espionaje, por ello la criptografia musical tambien recibe el nombre de “criptografia XXXX XXXX”.</p>
+         <input type="button" value="😱"  id="buttonMh1">
+         <input type="button" value="❤"   id="buttonMh2">
+         <input type="button" value="😯"  id="buttonMh3">
+         <input type="button" value="🎬"  id="buttonMh4">
+        </div>
+
         <div>
-          
+          <p>¿GUESS WHO?</p>
+          <input type="text" id="mensaje">
+          <input type="text" id="clave">
+          <input type="button" value="DESCIFRAR"  id="buttonDescifrar">
+          <input type="button" value="CIFRAR"  id="Cifrar">
+          <input type="text" id="resultado">
+          <input type="button" value="🔝"  id="buttonTop">
+          <input type="button" value="CL"   id="buttonClear">
+        </div>
+
+        <div>
+          <p>XXXXX XXXXXXXX</p>
+          <img src="ME.png" alt="MDN" class="Clock" width="290" height="200") > 
+          <p>Clave: Died at age 44</p> 
+          <p>Fue reina consorte de Francia hasta la muerte del rey y volvio a su pais natal, Escocia, para reinar. Las cartas por las que fue acusada de conspiración se escribieron con algoritmos de cifrado y codificacón.</p>
+          <input type="button" value="😱"  id="buttonMe1">
+          <input type="button" value="❤"   id="buttonMe2">
+          <input type="button" value="😯"  id="buttonMe3">
+          <input type="button" value="🎬"  id="buttonMe4">  
         </div>
 
       </main>
@@ -44,6 +73,6 @@
   </body>
 
   <footer>
-
+<address>criptografía.cine@global.com</address>
   </footer>
 </html>
