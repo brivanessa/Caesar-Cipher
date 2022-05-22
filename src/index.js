@@ -1,4 +1,25 @@
 
+//let mensaje=document.getElementById("escribir"); //typeof mensaje: undefined
+let mensaje =prompt("Tu mensaje es: "); //typeof mensaje: consola undefined
+console.log(mensaje);
+let resultar="";
+let letras=0;
+while (letras <= mensaje.length){
+    let letra= mensaje.charCodeAt(letras);
+    letras++;
+    //console.log(letra);
+    //console.log(typeof mensaje);
+    let cifra=(Number(letra)-65+1)%26+65;
+    //console.log(String.fromCharCode(cifra));
+    let camb=String.fromCharCode(cifra);
+   // console.log(camb.concat(camb[1]));    
+        resultar+=camb;  
+}
+console.log(resultar);
+
+
+
+
 
 import cipher from './cipher.js';
 
@@ -44,22 +65,22 @@ function funcionMh3(){
 
 
 // BOTONES PAGE 2 Contenedor 3
-//Botón Emoji Asustado de person1 (Maria Estuardo - Me)
+//Botón Emoji Asustado de person2 (Maria Estuardo - Me)
 var Me1=document.getElementById("buttonMe1");
 Me1.addEventListener("click",funcionMe1);
 function funcionMe1(){
     alert("Fue condenada a muerte por conspirar contra su prima, y murió en Inglaterra como una mártir católica. El origen fue la conspiración encabezada por Anthony Babington cuyo fin era matar a la reina Isabel I y sustituirla por ella. El servicio de contraespionaje de la reina inglesa obtuvo cartas en las que ella estaba al tanto de todo y lo aprobaba, aunque aún hay controversia en relación a las cartas y su veracidad. En la redacción los conspiradores sustituían las letras por otras (cifrado), y algunas palabras se sustituían por símbolos (codificación).");
 } 
-//Botón Emoji heart de person1 (Maria Estuardo - Me)
+//Botón Emoji heart de person2 (Maria Estuardo - Me)
 var Me2=document.getElementById("buttonMe2");
 Me2.addEventListener("click",funcionMe2);
 function funcionMe2(){
     alert("«...¿Creéis que denigraré mi posición, mi estatus, la familia de la que vengo... al aceptar tal requerimiento? ¡No! ¡Nunca! Por más torcido que parezca, mi corazón es firme y no sufrirá ninguna humillación»...«Mirad vuestras conciencias y recordad que el teatro mundial es más amplio que el reino de Inglaterra»");
 } 
-//Botón Emoji sorprendido de person1 (Maria Estuardo - Me)
+//Botón Emoji sorprendido de person2 (Maria Estuardo - Me)
 var Me3=document.getElementById("buttonMe3");
 Me3.addEventListener("click",funcionMe3);
 function funcionMe3(){
     alert("Pocas figuras históricas han fascinado tanto a académicos, escritores y cineastas. A lo largo de cuatro siglos, la poesía, teatro, ópera y cine han mantenido vivo su recuerdo.");
 }
-//Botón Emoji trailer de person1  (Maria Estuardo - Me)
+//Botón Emoji trailer de person2 (Maria Estuardo - Me)
