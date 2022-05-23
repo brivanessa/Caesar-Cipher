@@ -10,6 +10,11 @@ console.log(cipher);
 //console.log(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ',33))
 ////////////////
 
+var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
+console.log(resultado);
+console.log(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+
+
 // BOTONES PAGE 1
 ///function mensaje1(){alert("vvvvvvvvvv")} //es para con onclick pero en este js no funciona (si funciona en script.js)
 //Botón Emoji Foquito 1

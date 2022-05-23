@@ -16,7 +16,7 @@ const cipher = {
   return resultar;
 }
 };
-//var resultado= cipher.encode(prompt("xxxx"),Number(prompt("xxx")));
+//var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
 //console.log(resultado);
 
 export default cipher;
