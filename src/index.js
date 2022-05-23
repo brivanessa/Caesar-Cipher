@@ -1,29 +1,14 @@
 
-//let mensaje=document.getElementById("escribir"); //typeof mensaje: undefined
-let mensaje =prompt("Tu mensaje es: "); //typeof mensaje: consola undefined
-console.log(mensaje);
-let resultar="";
-let letras=0;
-while (letras <= mensaje.length){
-    let letra= mensaje.charCodeAt(letras);
-    letras++;
-    //console.log(letra);
-    //console.log(typeof mensaje);
-    let cifra=(Number(letra)-65+1)%26+65;
-    //console.log(String.fromCharCode(cifra));
-    let camb=String.fromCharCode(cifra);
-   // console.log(camb.concat(camb[1]));    
-        resultar+=camb;  
-}
-console.log(resultar);
 
-
-
-
+///////////////
 
 import cipher from './cipher.js';
 
 console.log(cipher);
+//var resultado= cipher.encode(Number(prompt("n")),prompt("xxxx"),);
+//console.log(resultado);
+//console.log(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ',33))
+////////////////
 
 // BOTONES PAGE 1
 ///function mensaje1(){alert("vvvvvvvvvv")} //es para con onclick pero en este js no funciona (si funciona en script.js)
