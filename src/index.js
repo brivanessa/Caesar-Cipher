@@ -4,16 +4,21 @@
 
 import cipher from './cipher.js';
 
-console.log(cipher);
+//console.log(cipher);
 //var resultado= cipher.encode(Number(prompt("n")),prompt("xxxx"),);
 //console.log(resultado);
 //console.log(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ',33))
 ////////////////
 
 var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
-console.log(resultado);
-console.log(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
 
+console.log(resultado);
+//console.log("revisar");
+    //console.log(cipher.encode());
+    //console.log(cipher.encode(0));
+    //console.log(cipher.encode(null, []));
+    //console.log(cipher.encode(0,0));
+    //console.log(cipher.encode(33,'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
 
 // BOTONES PAGE 1
 ///function mensaje1(){alert("vvvvvvvvvv")} //es para con onclick pero en este js no funciona (si funciona en script.js)
