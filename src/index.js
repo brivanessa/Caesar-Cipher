@@ -1,24 +1,31 @@
-
-
-///////////////
-
 import cipher from './cipher.js';
-
 //console.log(cipher);
-//var resultado= cipher.encode(Number(prompt("n")),prompt("xxxx"),);
+//var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
 //console.log(resultado);
-//console.log(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ',33))
-////////////////
-
-var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
-
-console.log(resultado);
 //console.log("revisar");
     //console.log(cipher.encode());
     //console.log(cipher.encode(0));
     //console.log(cipher.encode(null, []));
     //console.log(cipher.encode(0,0));
     //console.log(cipher.encode(33,'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+
+
+//BOTONES PAGE 2 Contenedor 2
+
+var cipherCesar=document.getElementById("buttonCifrar");
+cipherCesar.addEventListener("click",mostrarPrompt);
+function mostrarPrompt(){
+    let mensajeCifrar=prompt("Mensaje a Codificar: ");
+    let desplazamiento=prompt("Desplazamiento: ");
+    var resultado= cipher.encode(Number(desplazamiento),mensajeCifrar);
+    alert("Tu mensaje cifrado es: " +resultado);
+    document.getElementById("resumen").value= "Tu mensaje para cifrar fue: "+"\n" + mensajeCifrar +"\n" +"\n" + " Con un desplazamiento de:" +"\n"+ desplazamiento +  " position(s).";
+    document.getElementById("resultado").value= "Tu mensaje cifrado es: "+"\n" + resultado;
+}
+
+
+
+
 
 // BOTONES PAGE 1
 ///function mensaje1(){alert("vvvvvvvvvv")} //es para con onclick pero en este js no funciona (si funciona en script.js)
@@ -34,6 +41,15 @@ idea2.addEventListener("click",funcion2);
 function funcion2(){
     alert("¿QUÉ ES EL CIFRADO CÉSAR?"+"\n"+"El cifrado César es una de las técnicas más simples para cifrar un mensaje y uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.");
 }
+
+
+
+
+
+
+
+
+
 
 
 // BOTONES PAGE 2 Contenedor 1

@@ -1,6 +1,15 @@
 
  /*La pseudo-clase :root de CSS selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento <html>*/ 
    :root { 
-    background: yellow;
+    background: #ECEAEA;
   }
+
+  #resumen{
+    text-align:center
+  }
+
+  #resultado{
+    text-align:center
+  }
+
   

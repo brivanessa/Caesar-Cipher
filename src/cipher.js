@@ -1,14 +1,12 @@
 
-
-
 const cipher = {
    encode:function (offset,string) {
       let resultar="";
       let letras=0;
       let stringMayus=string.toUpperCase();
-      console.log(stringMayus);
+      //console.log(stringMayus);
       while (letras < string.length)  {
-        //this.string=string.toUpperCase();
+        //this.string=string.toUpperCase(); // this es para llamar var que estan dentro de un elemento
         let letra= stringMayus.charCodeAt(letras);
           letras++;
         let camb;
@@ -23,13 +21,7 @@ const cipher = {
       //console.log(typeof(resultar));
       }
    if(typeof(Number(offset))==='number' && typeof(string)==='string') return resultar ; 
- //console.log(resultar);
-//return  "HIJKLMNOPQRSTUVWXYZABCDEFG";
-
 }
 };
-//var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
-//console.log(resultado);
-
 export default cipher;
 
