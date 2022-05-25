@@ -12,17 +12,27 @@ import cipher from './cipher.js';
 
 //BOTONES PAGE 2 Contenedor 2
 
-var cipherCesar=document.getElementById("buttonCifrar");
+let cipherCesar=document.getElementById("buttonCifrar");
 cipherCesar.addEventListener("click",mostrarPrompt);
 function mostrarPrompt(){
     let mensajeCifrar=prompt("Mensaje a Codificar: ");
     let desplazamiento=prompt("Desplazamiento: ");
-    var resultado= cipher.encode(Number(desplazamiento),mensajeCifrar);
-    alert("Tu mensaje cifrado es: " +resultado);
+    let resultado= cipher.encode(Number(desplazamiento),mensajeCifrar);
+    //alert("Tu mensaje cifrado es: " +resultado);
     document.getElementById("resumen").value= "Tu mensaje para cifrar fue: "+"\n" + mensajeCifrar +"\n" +"\n" + " Con un desplazamiento de:" +"\n"+ desplazamiento +  " position(s).";
     document.getElementById("resultado").value= "Tu mensaje cifrado es: "+"\n" + resultado;
 }
 
+let decipherCesar=document.getElementById("buttonDescifrar");
+decipherCesar.addEventListener("click",mostrarPromptDes);
+function mostrarPromptDes(){
+    let mensajeDescifrar=prompt("Mensaje a Codificar: ");
+    let retrocede=prompt("Desplazamiento: ");
+    let resultado= cipher.decode(Number(retrocede),mensajeDescifrar);
+    //alert("Tu mensaje cifrado es: " +resultado);
+    document.getElementById("resumen").value= "Tu mensaje para descifrar fue: "+"\n" + mensajeDescifrar +"\n" +"\n" + " Con un desplazamiento de:" +"\n"+ retrocede +  " position(s).";
+    document.getElementById("resultado").value= "Tu mensaje descifrado es: "+"\n" + resultado;
+}
 
 
 
