@@ -54,5 +54,5 @@ const cipher = {                          //Es un objeto - siempre con const
       return resultar;  
     },
 };
-export default cipher;
+export default cipher; //siempre export va al final
 

@@ -1,9 +1,108 @@
 
  /*La pseudo-clase :root de CSS selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento <html>*/ 
-   :root { 
+ /*  :root { 
     background: #ECEAEA;
-  }
+  }*/
 
+/* html{
+  scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
+/*  background-image: url("IMG/fondo4.jpg")} /*fondo de la pag*/
+
+body{
+  margin:0; 
+  scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
+  background-image: url("IMG/fondo4.jpg"); /*fondo de la pag*/
+}
+
+header{
+  background-color: rgba(249, 249, 246, 0.8);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*tipo de letra*/
+  color: rgb(53, 79, 117);  /*color de letra*/
+  -webkit-text-stroke: 3px  rgb(53, 79, 117); /*borde al texto*/
+  padding-block: 1px; /*padding estblece el espacio de relleno (entre el elemento y su borde)*/
+  padding-left: 30px; /*margen interior izquierdo*/
+  margin:0;
+  font-size: 20px;
+}
+
+section{
+  margin: 60px  22% ;
+  margin-block-end: 200px;
+  padding: 30px 30px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border:6px solid rgb(165, 165, 165); /* separado seria: border-style:solid; border-color: white;*/
+  font-size: 30px;
+}
+
+section.inicio img.imagenMujeres{
+  float: right;
+  margin-left: 20px;
+  width: 250px;
+  border-radius: 12px;
+}
+
+h2{
+font-family:  'Gill Sans';
+color: rgb(53, 79, 117);  /*color de letra*/
+-webkit-text-stroke: 2px  rgb(53, 79, 117); /*borde al texto*/
+text-align: center;
+font-size: 50px;
+/*text-indent: 20%; /*sangria*/
+line-height: 0px; /*interlineado*/
+}
+
+.button{
+  background-color: gray;
+  border-radius: 12px;
+  border:6px solid gray; /* separado seria: border-style:solid; border-color: white;*/
+  width: 100px; /*tamaño*/
+  font-size: 40px; /*tamaño de fuente*/
+  text-align: center;
+}
+
+.button:hover{                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+  background-color: white;  
+ }
+
+.buttonGoTopCipher{
+  background-color: transparent;
+  font-family: "Impact"; /*tipo de letra*/
+  color: rgb(53, 79, 117);  /*color de letra*/
+  border-radius: 12px;
+  border:6px solid rgb(53, 79, 117); /* separado seria: border-style:solid; border-color: white;*/
+  width: 100px; /*tamaño*/
+  height: 200px;
+  font-size: 42px; /*tamaño de fuente*/
+  text-align: center; 
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.buttonGoTopCipher:hover{                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+  background-color: rgb(53, 79, 117);
+  color:white;  
+ }
+
+p{
+  color: black;
+  font-family: 'Gill Sans';
+  font-size: 20px;
+  text-align: justify;
+}
+
+.tituloPersonaje{
+  color: darkblue;
+  font-size: 22px; 
+  font-family: Impact; 
+}
+
+h3{
+  border-radius: 12px;
+  padding: 5px 10px;
+  border:6px solid white;
+  width: 30%;
+}
   #resumen{
     text-align:center
   }

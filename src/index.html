@@ -6,74 +6,68 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <header>  <! contiene encabezados, logos, formularios de busqueda>
-    <h1>Historia, Cine 🍿 y Criptografía ➿♅  </h1>
-  </header>
-
   <body>
-    <div id="root"> <!IDK>
-    </div>
-
-    <section>
-
-      <main>
-        <div>
-          <h1>¿GUESS WHO?</h1>  <br>
-          <p>A lo largo de la historia la criptografía y su mala/buena utilización estuvieron implicados en la conspiración que condujo a condenas, encarcelamientos e incluso ejecuciones.</p>
+       <!div id="root"> <!IDK>
+        <!/div>
+    <header id="encabezado">  <! contiene encabezados, logos, formularios de busqueda>
+          <h1>DECIPHER <span>HISTORY</span></h1>
+    </header>
+    <section class="inicio" id="page1">
+          <img src="IMG/Mujeres.gif" class="imagenMujeres">
+          <h2>¿GUESS WHO?</h2>  
+          <p>A lo largo de la historia la <em><strong>criptografía</strong></em> y su mala/buena utilización estuvieron implicados en la conspiración que condujo a condenas, encarcelamientos e incluso ejecuciones.</p>
           <p>Usando el cifrado por sustitución  descifraremos la identidad de 2 personajes de la historia.</p>  <br>
-          <input type="button" value="GO!"  id="buttonPlay">
-          <input type="button" value="💡"  id="buttonIdea1">
+         
+          <!input href="#page2" type="button" value="GO!"  id="buttonPlay">
+          <a href="#page2" class="buttonGoTopCipher">GO!</a>
+          <input type="button" value="🧐"  class="button" id="buttonIdea1">
           <!input type="button" value="💡"  id="buttonPlay" onclick="mensaje1()"> <!onclic solo funciona con script.js (creo que es pq no tiene type (module)) aunque igual el onclick inline en html no es una muy buena practica ni sostenible en el tiempo>
-          <input type="button" value="💡"  id="buttonIdea2">
-        </div>
-        
-       <div id="person1" class="contenedor1">
-         <p>XXXX XXXX</p>
-         <!img src="/Users/vanessa/Documents/LABORATORIA_018_2022/1_Proyecto/LIM018-cipher/MH.png" alt="MDN" class="Clock" width="290" height="200") > <!class es el atributo que muestra descripción de la imagen al mantener el raton sobre la imagen>
-         <p>Clave: Died at age 41</p> 
-         <p>Bailarina, cortesana y espía que durante la Primera Guerra Mundial usó la criptografía musical en sus labores de espionaje, por ello la criptografia musical tambien recibe el nombre de “criptografia XXXX XXXX”.</p>
-         <input type="button" value="😱"  id="buttonMh1">
-         <input type="button" value="❤"   id="buttonMh2">
-         <input type="button" value="😯"  id="buttonMh3">
-         <input type="button" value="🎬"  id="buttonMh4">
-        </div>
+          <input type="button" value="🧐"  class="button" id="buttonIdea2">
+    </section>
 
-        <div id="cipherCesar" class="contenedor2">
-          <p>¿GUESS WHO?</p>
+    <main class="principal" id="page2"> 
+      <div id="person1" class="contenedor1">
+         <p><mark>BPIP WPGX</mark></p>
+         <img src="IMG/MH.png" alt="MH" class="imagen" width="290" height="200"> 
+         <p> <strong>Clave:</strong> Died at age <mark>41</mark>.</p> 
+         <p>Bailarina, cortesana y espía que durante la Primera Guerra Mundial usó la <strong>criptografía musical</strong> en sus labores de espionaje, por ello la criptografia musical tambien recibe el nombre de “criptografia XXXX XXXX”.</p>
+         <input type="button" value="😱"  class="button" id="buttonMh1">
+         <input type="button" value="💛"   class="button" id="buttonMh2">
+         <input type="button" value="😯"  class="button" id="buttonMh3">
+         <input type="button" value="🎬"  class="button" id="buttonMh4">
+      </div>
+
+      <div id="cipherCesar" class="contenedor2">
+          <h2>¿GUESS WHO?</h2>
           <textarea name="text" id="resumen" cols="30" rows="10" disabled></textarea>
          <!input type="text" id="escribir" class ="resumen"  >
           <input type="button" value="DESCIFRAR"  id="buttonDescifrar">
           <input type="button" value="CIFRAR"  id="buttonCifrar">
           <!input type="text" id="resultado">
           <textarea name="text" id="resultado" cols="30" rows="8"></textarea>
-          <input type="button" value="🔝"  id="buttonTop">
-          <input type="button" value="CL"   id="buttonClear">
-        </div>
 
-        <div id="person2" class="contenedor3">
-          <p>XXXXX XXXXXXXX</p>
-          <!img src="/Users/vanessa/Documents/LABORATORIA_018_2022/1_Proyecto/LIM018-cipher/ME.png" alt="MDN" class="Clock" width="290" height="200") > 
-          <p>Clave: Died at age 44</p> 
-          <p>Fue reina consorte de Francia hasta la muerte del rey y volvio a su pais natal, Escocia, para reinar. Las cartas por las que fue acusada de conspiración se escribieron con algoritmos de cifrado y codificacón.</p>
-          <input type="button" value="😱"  id="buttonMe1">
-          <input type="button" value="❤"   id="buttonMe2">
-          <input type="button" value="😯"  id="buttonMe3">
-          <input type="button" value="🎬"  id="buttonMe4">  
-        </div>
+          <a href="#page1" class="button">🔝 </a>
+          <input type="button" value="🗑️ "  class="button"  id="buttonClear">
+      </div>
 
-      </main>
+      <div id="person2" class="contenedor3">
+          <h3><mark class="tituloPersonaje">ESJAS WKLMSJVG</mark></h3>
+          <img src="IMG/ME.png" alt="MDN" class="imagen" width="290" height="200"> 
+          <p><strong>Clave:</strong> Died at age <mark>44</mark>.</p> 
+          <p>Fue reina consorte de Francia hasta la muerte del rey y volvio a su pais natal, Escocia, para reinar. Las cartas por las que fue acusada de conspiración se escribieron con <strong>algoritmos de cifrado y codificacón</strong>.</p>
+          <input type="button" value="😱"  class="button" id="buttonMe1">
+          <input type="button" value="💛"  class="button" id="buttonMe2">
+          <input type="button" value="😯"  class="button" id="buttonMe3">
+          <input type="button" value="🎬"  class="button" id="buttonMe4">  
+      </div>
 
-      <figure>
+    </main>
 
-      </figure>
-
-    </section>
-    <!script src="script.js"><!/script>
     <script src="index.js" type="module"></script>
   
   </body>
 
   <footer>
-<address>criptografía.cine@global.com</address>
+  <address>historia.cine@global.com</address>
   </footer>
 </html>

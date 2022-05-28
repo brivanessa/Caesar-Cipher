@@ -1,4 +1,4 @@
-import cipher from './cipher.js';
+import cipher from './cipher.js';   //Siempre import va al inicio
 //console.log(cipher);
 //var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
 //console.log(resultado);
@@ -26,7 +26,7 @@ function mostrarPrompt(){
 let decipherCesar=document.getElementById("buttonDescifrar");
 decipherCesar.addEventListener("click",mostrarPromptDes);
 function mostrarPromptDes(){
-    let mensajeDescifrar=prompt("Mensaje a Codificar: ");
+    let mensajeDescifrar=prompt("Mensaje a Descificar: ");
     let retrocede=prompt("Desplazamiento: ");
     let resultado= cipher.decode(Number(retrocede),mensajeDescifrar);
     //alert("Tu mensaje cifrado es: " +resultado);
