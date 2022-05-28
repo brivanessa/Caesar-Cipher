@@ -19,18 +19,28 @@ header{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*tipo de letra*/
   color: rgb(53, 79, 117);  /*color de letra*/
   -webkit-text-stroke: 3px  rgb(53, 79, 117); /*borde al texto*/
-  padding-block: 1px; /*padding estblece el espacio de relleno (entre el elemento y su borde)*/
-  padding-left: 30px; /*margen interior izquierdo*/
+   /*padding-block: 0px;  /*padding estblece el espacio de relleno (entre el elemento y su borde)*/
+  padding-left: 25px; /*margen interior izquierdo*/
   margin:0;
-  font-size: 20px;
+  font-size: 15px;
+  /*backdrop-filter: blur(40px)*/ /*para filtro desenfocado*/
+  position:fixed; /*para uqe la cabecera quede fija*/
+  left:0; /*sin margen a la izquierda*/
+  top:0; /*sinn margen arriba*/
+  width: 100%; /*para que ocupe todo el ancho de la pag - right:0 tiene el mismo efecto*/
 }
 
-section{
-  margin: 60px  22% ;
-  margin-block-end: 200px;
+.inicio{
+  padding-top: 12rem;
+}
+
+.portada{
+  margin: 0px 22%;
+  margin-block-end: 100px;
   padding: 30px 30px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
   border:6px solid rgb(165, 165, 165); /* separado seria: border-style:solid; border-color: white;*/
   font-size: 30px;
 }
@@ -38,7 +48,7 @@ section{
 section.inicio img.imagenMujeres{
   float: right;
   margin-left: 20px;
-  width: 250px;
+  width: 225px;
   border-radius: 12px;
 }
 
@@ -53,10 +63,10 @@ line-height: 0px; /*interlineado*/
 }
 
 .button{
-  background-color: gray;
+  background-color:  rgb(165, 165, 165);
   border-radius: 12px;
-  border:6px solid gray; /* separado seria: border-style:solid; border-color: white;*/
-  width: 100px; /*tamaño*/
+  border:6px  solid gray; /* separado seria: border-style:solid; border-color: white;*/
+  width: 90px; /*tamaño*/
   font-size: 40px; /*tamaño de fuente*/
   text-align: center;
 }
@@ -84,25 +94,40 @@ line-height: 0px; /*interlineado*/
   color:white;  
  }
 
+main{
+  padding-top: 3rem; /*separacion entre contenedor y header*/
+}
+.contenedor1, .contenedor2, .contenedor3 {
+  float: left;
+  width: 27%;
+  height: 50%;
+  margin-block-end: 35px;
+  margin-left: 29px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border:6px solid rgb(165, 165, 165); /* separado seria: border-style:solid; border-color: white;*/
+  font-size: 30px;
+}
+
+footer{
+  padding-top: 10rem;
+}
+
 p{
+  color: black;
+  font-family: 'Gill Sans';
+  font-size: 18px;
+  text-align: justify;
+}
+
+.tituloPersonaje{
   color: black;
   font-family: 'Gill Sans';
   font-size: 20px;
   text-align: justify;
 }
 
-.tituloPersonaje{
-  color: darkblue;
-  font-size: 22px; 
-  font-family: Impact; 
-}
-
-h3{
-  border-radius: 12px;
-  padding: 5px 10px;
-  border:6px solid white;
-  width: 30%;
-}
   #resumen{
     text-align:center
   }
