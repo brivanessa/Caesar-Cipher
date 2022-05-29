@@ -18,7 +18,7 @@ header{
   background-color: rgba(249, 249, 246, 0.8);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*tipo de letra*/
   color: rgb(53, 79, 117);  /*color de letra*/
-  -webkit-text-stroke: 3px  rgb(53, 79, 117); /*borde al texto*/
+  -webkit-text-stroke: 2px  rgb(53, 79, 117); /*borde al texto*/
    /*padding-block: 0px;  /*padding estblece el espacio de relleno (entre el elemento y su borde)*/
   padding-left: 25px; /*margen interior izquierdo*/
   margin:0;
@@ -47,10 +47,18 @@ header{
 
 section.inicio img.imagenMujeres{
   float: right;
-  margin-left: 20px;
+  margin-left: 30px;
   width: 225px;
   border-radius: 12px;
 }
+
+.imagen{
+  border-radius: 25px; 
+  margin: auto;    /*para centrar*/
+  display: block;   /*para centrar*/
+}
+
+
 
 h2{
 font-family:  'Gill Sans';
@@ -60,6 +68,7 @@ text-align: center;
 font-size: 50px;
 /*text-indent: 20%; /*sangria*/
 line-height: 0px; /*interlineado*/
+margin-top: 30px;
 }
 
 .button{
@@ -69,13 +78,14 @@ line-height: 0px; /*interlineado*/
   width: 90px; /*tamaño*/
   font-size: 40px; /*tamaño de fuente*/
   text-align: center;
+  margin-top: 12px;
 }
 
 .button:hover{                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
   background-color: white;  
  }
 
-.buttonGoTopCipher{
+.buttonGoTrailer{
   background-color: transparent;
   font-family: "Impact"; /*tipo de letra*/
   color: rgb(53, 79, 117);  /*color de letra*/
@@ -83,16 +93,86 @@ line-height: 0px; /*interlineado*/
   border:6px solid rgb(53, 79, 117); /* separado seria: border-style:solid; border-color: white;*/
   width: 100px; /*tamaño*/
   height: 200px;
-  font-size: 42px; /*tamaño de fuente*/
+  font-size: 41px; /*tamaño de fuente*/
   text-align: center; 
   padding-right: 20px;
   padding-left: 20px;
   text-decoration: none;
+  margin-left: 0px;
+  margin-right: 70px;
 }
-.buttonGoTopCipher:hover{                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+.buttonGoTrailer:hover{                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
   background-color: rgb(53, 79, 117);
   color:white;  
  }
+
+
+ .buttonBorrar{
+  background-color: transparent;
+  font-family: "Arial"; /*tipo de letra*/
+  border-radius: 12px;
+  border:3px  solid gray; /* separado seria: border-style:solid; border-color: white;*/
+  width: 100px; /*tamaño*/
+  color: gray;  /*color de letra*/
+  font-size: 15px; /*tamaño de fuente*/
+  text-align: center;
+  margin-left:210px;
+}
+
+.buttonTop{
+  background-color: transparent;
+  font-family: "Arial"; /*tipo de letra*/
+  color: rgb(53, 79, 117);  /*color de letra*/
+  border-radius: 12px;
+  border:3px solid rgb(53, 79, 117); /* separado seria: border-style:solid; border-color: white;*/
+  width: 100px; /*tamaño*/
+  height: 90px;
+  font-size: 15px; /*tamaño de fuente*/
+  text-align: center; 
+  padding: 2px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.buttonTop:hover {                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+  background-color: rgb(53, 79, 117);
+  color:white;  
+ }
+
+ .buttonBorrar:hover {                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+  background-color: gray;
+  border:3px solid gray;
+  color:white;  
+ }
+
+.buttonCipher{
+  background-color: rgba(244, 247, 78, 0.5);
+  font-family: 'Trebuchet MS'; /*tipo de letra*/
+  border-radius: 12px;
+  border:3px  solid gray; /* separado seria: border-style:solid; border-color: white;*/
+  width: 170px; /*tamaño*/
+  color: gray;  /*color de letra*/
+  font-size: 30px; /*tamaño de fuente*/
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 0px;
+}
+.buttonCipher:hover {                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+  background-color: rgb(53, 79, 117);
+  border:3px solid  rgb(53, 79, 117);
+  color:white; 
+  -webkit-text-stroke: 1px  white; /*borde al texto*/ 
+ }
+
+textarea{
+  font-family: 'Gill Sans';
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 12px;
+  padding: 7px;
+  text-align: center;
+}
 
 main{
   padding-top: 3rem; /*separacion entre contenedor y header*/
@@ -101,7 +181,7 @@ main{
   float: left;
   width: 27%;
   height: 50%;
-  margin-block-end: 35px;
+  margin-block-end: 22px;
   margin-left: 29px;
   padding: 20px;
   border-radius: 12px;
@@ -110,8 +190,17 @@ main{
   font-size: 30px;
 }
 
-footer{
-  padding-top: 10rem;
+.piePagina{
+  color: gray;
+  font-family: 'Gill Sans';
+  text-decoration: none;
+  margin-left: 25px;
+  margin-top: 0px;
+  background-color: transparent;
+  
+  border-radius: 12px;
+  border:3px ; /* separado seria: border-style:solid; border-color: white;*/
+  padding: 3px;
 }
 
 p{
@@ -121,19 +210,17 @@ p{
   text-align: justify;
 }
 
-.tituloPersonaje{
-  color: black;
-  font-family: 'Gill Sans';
+h3{
+  color:  rgb(53, 79, 117);
+  font-family: courier;
   font-size: 20px;
-  text-align: justify;
+  text-align:center;
+
+  background-color: white;
+  border-radius: 12px;
+  border:3px ; /* separado seria: border-style:solid; border-color: white;*/
+  padding: 5px;
 }
 
-  #resumen{
-    text-align:center
-  }
-
-  #resultado{
-    text-align:center
-  }
 
   

@@ -12,10 +12,10 @@ const cipher = {                          //Es un objeto - siempre con const
        let camb=0;
        // let cifra;
           if (((Number(letra))>=97) && ((Number(letra))<=122)) {
-              camb=String.fromCharCode(((Number(letra))-97+(Number(offset)))%26+97);
+              camb=String.fromCharCode(((Number(letra))-97+(Math.abs(offset)))%26+97);
               //let camb=String.fromCharCode(cifra);
             } else if ((Number(letra)>=65) && (Number(letra)<=90)) {
-              camb=String.fromCharCode(((Number(letra))-65+(Number(offset)))%26+65);
+              camb=String.fromCharCode(((Number(letra))-65+(Math.abs(offset)))%26+65);
               //let camb=String.fromCharCode(cifra); 
             } else {
               camb=String.fromCharCode(Number(letra));
@@ -40,10 +40,10 @@ const cipher = {                          //Es un objeto - siempre con const
         letras++;
         let camb="";
           if ((Number(letra)>=65) && (Number(letra)<=90)) {
-            camb=String.fromCharCode(((Number(letra)-65)+(26 -(Number(offset)%26)))%26+65);
+            camb=String.fromCharCode(((Number(letra)-65)+(26 -(Math.abs(offset)%26)))%26+65);
             //camb=String.fromCharCode(cifra); 
           } else if ((Number(letra)>=97) && (Number(letra)<=122)) {
-            camb=String.fromCharCode(((Number(letra)-97)+(26 -(Number(offset)%26)))%26+97);
+            camb=String.fromCharCode(((Number(letra)-97)+(26 -(Math.abs(offset)%26)))%26+97);
               //camb=String.fromCharCode(cifra);
                } else {
              camb=String.fromCharCode(Number(letra));

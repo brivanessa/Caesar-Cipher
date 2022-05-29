@@ -20,7 +20,7 @@
           <p>Usando el cifrado por sustitución  descifraremos la identidad de 2 personajes de la historia.</p>  <br>
          
           <!input href="#page2" type="button" value="GO!"  id="buttonPlay">
-          <a href="#page2" class="buttonGoTopCipher">GO!</a>
+          <a href="#page2" class="buttonGoTrailer">GO!</a>
           <input type="button" value="🧐"  class="button" id="buttonIdea1">
           <!input type="button" value="💡"  id="buttonPlay" onclick="mensaje1()"> <!onclic solo funciona con script.js (creo que es pq no tiene type (module)) aunque igual el onclick inline en html no es una muy buena practica ni sostenible en el tiempo>
           <input type="button" value="🧐"  class="button" id="buttonIdea2">
@@ -29,38 +29,39 @@
 
     <main class="principal" id="page2"> 
       <div id="person1" class="contenedor1">
-         <p><mark>BPIP WPGX</mark></p>
+         <h3><mark>BPIP WPGX: BPGVPGTIWP-OTAAT</mark></h3>
          <img src="IMG/MH.png" alt="MH" class="imagen" width="290" height="200"> 
-         <p> <strong>Clave:</strong> Died at age <mark>41</mark>.</p> 
-         <p>Bailarina, cortesana y espía que durante la Primera Guerra Mundial usó la <strong>criptografía musical</strong> en sus labores de espionaje, por ello la criptografia musical tambien recibe el nombre de “criptografia XXXX XXXX”.</p>
+         <h3>Clave: Died at age <mark>41</mark>.</h3> 
+         <p>Bailarina, cortesana y espía que durante la Primera Guerra Mundial usó la <strong>criptografía musical</strong> en sus labores de espionaje, por ello la criptografia musical tambien recibe el nombre de “criptografia Mata Hari”.</p>
          <input type="button" value="😱"  class="button" id="buttonMh1">
          <input type="button" value="💛"   class="button" id="buttonMh2">
          <input type="button" value="😯"  class="button" id="buttonMh3">
-         <input type="button" value="🎬"  class="button" id="buttonMh4">
+         <a href="https://www.youtube.com/watch?v=A_zWWIMBEFo" id="buttonTrailer1" class="buttonGoTrailer" disabled>🎬 </a>
       </div>
-
+    
       <div id="cipherCesar" class="contenedor2">
           <h2>¿GUESS WHO?</h2>
-          <textarea name="text" id="resumen" cols="30" rows="10" disabled></textarea>
+          <textarea name="text" id="resumen" cols="37" rows="9" disabled >Clic en DESCIFRAR: Para descifrar un mensaje. Clic en CIFRAR: Para cifrar un mensaje. </textarea>
          <!input type="text" id="escribir" class ="resumen"  >
-          <input type="button" value="DESCIFRAR"  id="buttonDescifrar">
-          <input type="button" value="CIFRAR"  id="buttonCifrar">
+          <input type="button" value="DESCIFRAR"  id="buttonDescifrar" class="buttonCipher">
+          <input type="button" value="CIFRAR"  id="buttonCifrar" class="buttonCipher">
           <!input type="text" id="resultado">
-          <textarea name="text" id="resultado" cols="30" rows="8"></textarea>
+          <textarea name="text" id="resultado" cols="37" rows="6"></textarea>
 
-          <a href="#page1" class="button">🔝 </a>
-          <input type="button" value="🗑️ "  class="button"  id="buttonClear">
+          <a href="#page1"  class="buttonTop" > ⬆TOP </a>
+          <input type="button" value="BORRAR"  class="buttonBorrar"  id="buttonClear">
       </div>
 
       <div id="person2" class="contenedor3">
-          <p><mark class="tituloPersonaje">ESJAS WKLMSJVG</mark></p>
+          <h3><mark class="tituloPersonaje">ESJAS-WKLMSJVG</mark></h3>
           <img src="IMG/ME.png" alt="MDN" class="imagen" width="290" height="200"> 
-          <p><strong>Clave:</strong> Died at age <mark>44</mark>.</p> 
+          <h3>Clave: Died at age <mark>44</mark>.</h3> 
           <p>Fue reina consorte de Francia hasta la muerte del rey y volvio a su pais natal, Escocia, para reinar. Las cartas por las que fue acusada de conspiración se escribieron con <strong>algoritmos de cifrado y codificacón</strong>.</p>
           <input type="button" value="😱"  class="button" id="buttonMe1">
           <input type="button" value="💛"  class="button" id="buttonMe2">
           <input type="button" value="😯"  class="button" id="buttonMe3">
-          <input type="button" value="🎬"  class="button" id="buttonMe4">  
+          <a href="https://www.youtube.com/watch?v=riSROsdT-f0&t=16s" id="buttonTrailer2" class="buttonGoTrailer">🎬 </a>
+          
       </div>
 
     </main>
@@ -70,6 +71,6 @@
   </body>
 
   <footer>
-  <address>historia.cine@global.com</address>
+     <!a href="https://open.spotify.com/show/1l4NMBtxTcXREUXJqVndR8?si=e5dbc77591754d84"class="piePagina">DecipherHistory | Spotify<!/a>
   </footer>
 </html>

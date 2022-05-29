@@ -15,8 +15,8 @@ import cipher from './cipher.js';   //Siempre import va al inicio
 let cipherCesar=document.getElementById("buttonCifrar");
 cipherCesar.addEventListener("click",mostrarPrompt);
 function mostrarPrompt(){
-    let mensajeCifrar=prompt("Mensaje a Codificar: ");
-    let desplazamiento=prompt("Desplazamiento: ");
+    let mensajeCifrar=prompt("Mensaje a Cifrar: ");
+    let desplazamiento=prompt("Cada letra será reemplazada según este número fijo de posiciones. Desplazamiento:");
     let resultado= cipher.encode(Number(desplazamiento),mensajeCifrar);
     //alert("Tu mensaje cifrado es: " +resultado);
     document.getElementById("resumen").value= "Tu mensaje para cifrar fue: "+"\n" + mensajeCifrar +"\n" +"\n" + " Con un desplazamiento de:" +"\n"+ desplazamiento +  " position(s).";
@@ -27,14 +27,19 @@ let decipherCesar=document.getElementById("buttonDescifrar");
 decipherCesar.addEventListener("click",mostrarPromptDes);
 function mostrarPromptDes(){
     let mensajeDescifrar=prompt("Mensaje a Descificar: ");
-    let retrocede=prompt("Desplazamiento: ");
+    let retrocede=prompt("Cada letra será reemplazada según este número fijo de posiciones. Desplazamiento:");
     let resultado= cipher.decode(Number(retrocede),mensajeDescifrar);
     //alert("Tu mensaje cifrado es: " +resultado);
     document.getElementById("resumen").value= "Tu mensaje para descifrar fue: "+"\n" + mensajeDescifrar +"\n" +"\n" + " Con un desplazamiento de:" +"\n"+ retrocede +  " position(s).";
     document.getElementById("resultado").value= "Tu mensaje descifrado es: "+"\n" + resultado;
 }
 
-
+let borrar=document.getElementById("buttonClear");
+borrar.addEventListener("click",borrarTextarea);
+function borrarTextarea(){
+    document.getElementById("resumen").value= "";
+    document.getElementById("resultado").value= "";
+}
 
 
 // BOTONES PAGE 1
@@ -90,7 +95,7 @@ function funcionMh3(){
 var Me1=document.getElementById("buttonMe1");
 Me1.addEventListener("click",funcionMe1);
 function funcionMe1(){
-    alert("Fue condenada a muerte por conspirar contra su prima, y murió en Inglaterra como una mártir católica. El origen fue la conspiración encabezada por Anthony Babington cuyo fin era matar a la reina Isabel I y sustituirla por ella. El servicio de contraespionaje de la reina inglesa obtuvo cartas en las que ella estaba al tanto de todo y lo aprobaba, aunque aún hay controversia en relación a las cartas y su veracidad. En la redacción los conspiradores sustituían las letras por otras (cifrado), y algunas palabras se sustituían por símbolos (codificación).");
+    alert("Fue condenada a muerte por conspirar contra su prima y murió en Inglaterra como una mártir católica. El origen fue la conspiración encabezada por Anthony Babington cuyo fin era matar a la reina Isabel I. El servicio de contraespionaje de la reina inglesa obtuvo cartas en las que ella estaba al tanto de todo y lo aprobaba (aún hay controversia en relación a la veracidad de las cartas). En la redacción los conspiradores sustituían las letras por otras (cifrado), y algunas palabras se sustituían por símbolos (codificación).");
 } 
 //Botón Emoji heart de person2 (Maria Estuardo - Me)
 var Me2=document.getElementById("buttonMe2");
@@ -102,6 +107,6 @@ function funcionMe2(){
 var Me3=document.getElementById("buttonMe3");
 Me3.addEventListener("click",funcionMe3);
 function funcionMe3(){
-    alert("Pocas figuras históricas han fascinado tanto a académicos, escritores y cineastas. A lo largo de cuatro siglos, la poesía, teatro, ópera y cine han mantenido vivo su recuerdo.");
+    alert("Escritores y cineastas han usado la poesía, teatro, ópera y cine para retratar su historia. Una de sus últimas adptaciones tuvo 3 nominaciones a los Premios BAFTA 2019 y 2 nominaciones a los Premios Oscar 2019.");
 }
-//Botón Emoji trailer de person2 (Maria Estuardo - Me)
+
