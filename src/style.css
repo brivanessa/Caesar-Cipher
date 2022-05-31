@@ -11,7 +11,11 @@
 body{
   margin:0; 
   scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
-  background-image: url("IMG/fondo4.jpg"); /*fondo de la pag*/
+  background-image: url("IMG/ff9.jpg"); /*fondo de la pag*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center ;
 }
 
 header{
@@ -31,16 +35,18 @@ header{
 }
 
 .inicio{
-  padding-top: 12rem;
+  padding-top: 10.6rem;
+  margin-block-end: 200px;
 }
 
 .portada{
   margin: 0px 22%;
+  
   margin-block-end: 100px;
   padding: 30px 30px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(20px);
+  /*backdrop-filter: blur(20px);*/
   border:6px solid rgb(165, 165, 165); /* separado seria: border-style:solid; border-color: white;*/
   font-size: 30px;
 }
@@ -194,7 +200,7 @@ main{
   color: gray;
   font-family: 'Gill Sans';
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 1220px;
   margin-top: 0px;
   background-color: transparent;
   
