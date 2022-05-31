@@ -1,3 +1,5 @@
+/src
+
 # Cifrado César
 
 ## Índice
@@ -77,7 +79,7 @@ Sprint 2 (Semana 2)
 ├── Completar el "Cifrado" y "Descifrado" para letras en minúscula.
 └── Completar el "Cifrado" y "Descifrado" para otros caracteres y valores negativos.
 
-Sprint 2 (Semana 2)
+Sprint 3 (Semana 3)
 ├── Detallar el proceso de creación e implementación del proyecto usando un "README.md".
 └── Usar GitHub pages para desplegar la interfaz del proyecto.
 ```
