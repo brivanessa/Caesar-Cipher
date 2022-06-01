@@ -11,17 +11,17 @@
 * [5. Proceso de planificación](#5-Proceso-de-planificación)
 * [6. Consideraciones generales](#6-Consideraciones-generales)
 * [7. Consideraciones técnicas](#7-Consideraciones-técnicas)
-* [8. Consideraciones complementarias: Objetivos de aprendizaje y Checklist](#8-Consideraciones-complementarias:-Objetivos-de-aprendizaje-y-Checklist)
+* [8. Objetivos de aprendizaje y Checklist](#8-Objetivos-de-aprendizaje-y-Checklist)
 
 
 ## 1. Resumen del proyecto
 Se ha creado una página web que servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres. Para el proceso de encriptado se utilizó el Cifrado César que es una de las técnicas mas simples del cifrado por sustitución.
 
 Se puede acceder al proyecto siguiendo el enlace: 
-[Decipher History](https://en.wikipedia.org/wiki/Caesar_cipher)
+[Decipher History](https://brivanessa.github.io/Caesar-Cipher/src/)
 
 ## 2. Interfaz de usuario
-El usuario mediante los botones `Cifrar` y `Descifrar` podrá escribir un mensaje (texto) y elegir un `número de desplazamiento`. El número elegido indica cuantas posiciones se desea que se desplace cada letra del mensaje escrito, este número de desplazamiento será la clave para poder `Cifrar` y/o `Descifrar` el mensaje que se desea encriptar y/o descubrir. Finalmente se podrá ver el resumen de lo que el usuario ha escrito como requerimiento y el resultado del mensaje (cifrado/descifrado).
+El usuario mediante los botones `Cifrar` y `Descifrar` podrá escribir un mensaje (texto) y elegir un `número de desplazamiento`. El número elegido indica cuantas posiciones se desea que se desplace cada letra del mensaje escrito, este número de desplazamiento será la clave para poder `Cifrar` y/o `Descifrar` el mensaje que se desea encriptar y/o descubrir. Finalmente se podrá ver el resumen del requerimiento y el resultado del mensaje (cifrado/descifrado).
 
 ## 3. Investigación del usuario
 ### ¿Quiénes son los principales usuarios?
@@ -35,31 +35,31 @@ Los usuarios son estudiantes o personas curiosas que quieren aprender e investig
 - Jugando `Guess Who?` el usuario aprenderá como funciona la criptografía (principalmente el cifrado por sustitución) y al mismo tiempo podrá descifrar los nombres de minimamente dos personajes de la historia que usaron la criptografía como herramienta de comunicación. Los primeros conocimientos que obtenga le ayudaran a medir el impacto de la criptografia en los hechos historicos y como se sigue usando y a evolucionado en la actualidad.
 
 ## 4. Razonamiento
-Para la encriptación del mensaje se utiliza la fórmula matemática del Cifrado César, código `ASCII` y los métodos `charCodeAt()`y `String.fromCharCode()`. De modo que la fórmula desarrolada es:
--  `(X - 65 + N) % 26 + 65` donde:
+Para la encriptación del mensaje se utiliza la fórmula matemática del Cifrado César, código `ASCII` y los métodos `charCodeAt()`y `String.fromCharCode()`. De modo que la fórmula desarrolada fue:
+ `(X - 65 + N) % 26 + 65` donde:
 
-- `X`       : Usando el método `string.charCodeAt()` obtenemos el Código ASCII de cada letra.
-- `X - 65`  : Para encontrar su ubicación en el alfabeto.
-- `N`       : Es el offset (número de desplazamiento).
-- `... % 26`: Es el residuo de 26.
-- `... +65` : Para obtener el nuevo codigo ASCII.
-Finalmente usando String.fromCharCode(`Código ASCCI`) obtenemos la letra cifrada. 
+* `X`       : Usando el método `string.charCodeAt()` obtenemos el Código ASCII de cada letra.
+* `X - 65`  : Para encontrar su ubicación en el alfabeto.
+* `N`       : Es el offset (número de desplazamiento).
+* `... % 26`: Es el residuo de 26.
+* `... +65` : Para obtener el nuevo código `ASCII`.
+Finalmente usando String.fromCharCode(código `ASCII`) obtenemos la letra cifrada. 
 
-Para descifrar el mensaje se utiliza la fórmula matemática invertida, código `ASCII` y los métodos `charCodeAt()`y `String.fromCharCode()`. De modo que la fórmula desarrolada es: 
-- `[ {X-65} + {26-(N%26)} ] % 26 + 65` donde:
+Para descifrar el mensaje se utiliza la fórmula matemática invertida, código `ASCII` y los métodos `charCodeAt()`y `String.fromCharCode()`. De modo que la fórmula desarrolada fue: 
+`[ {X-65} + {26-(N%26)} ] % 26 + 65` donde:
 
-- `X`        : Usando el método `string.charCodeAt()` obtenemos el Código ASCII de cada letra.
-- `X - 65`   : Para encontrar su ubicación en el alfabeto.
-- `N`        : Es el offset (número de desplazamiento).
-- `(N%26)`   : Es el residuo de 26.
-- `26-(N%26)`: 26 menos el residuo de 26, corresponde al nuevo número de desplazamiento.
-- `... % 26` : Es el nuevo residuo de 26.
-- `... +65`  : Para obtener el codigo ASCII de la letra descifrada.
-Finalmente usando String.fromCharCode(`Código ASCCI`) obtenemos la letra descifrada. 
+* `X`        : Usando el método `string.charCodeAt()` obtenemos el Código ASCII de cada letra.
+* `X - 65`   : Para encontrar su ubicación en el alfabeto.
+* `N`        : Es el offset (número de desplazamiento).
+* `(N%26)`   : Es el residuo de 26.
+* `26-(N%26)`: 26 menos el residuo de 26, corresponde al nuevo número de desplazamiento.
+* `... % 26` : Es el nuevo residuo de 26.
+* `... +65`  : Para obtener el codigo ASCII de la letra descifrada.
+Finalmente usando String.fromCharCode (código `ASCII`) obtenemos la letra descifrada. 
 
-Para cifrar o descifrar el mensaje con letras en minúscula se utiliza las mismas fórmulas matemáticas pero sustituyendo el valor de 65 por el de 97 (`Código ASCCI` de la letra `a` en minúscula):
-- Para cifrar un mensaje: `(X - 97 + N) % 26 + 97`
-- Para descifrar un mensaje: `[ {X-97} + {26-(N%26)} ] % 26 + 97`
+Para cifrar o descifrar el mensaje con letras en minúscula se utiliza las mismas fórmulas matemáticas pero sustituyendo el valor 65 (código `ASCII` de la letra `A` en mayúscula) por el de 97 (código `ASCII` de la letra `a` en minúscula):
++ Para cifrar un mensaje   : `(X - 97 + N) % 26 + 97`
++ Para descifrar un mensaje: `[ {X-97} + {26-(N%26)} ] % 26 + 97`
 
 ## 5. Proceso de planificación
 
@@ -67,14 +67,14 @@ Para cifrar o descifrar el mensaje con letras en minúscula se utiliza las misma
 .Backlog de producto: Página web Cifrado César: "DECIPHER HISTORY"
 
 Sprint 1 (Semana 1)
-├── Crear Historias de Usuario: TRELLO.
+├── Crear historias de usuario: TRELLO.
 ├── Realizar prototipo del proyecto: FIGMA.
 ├── Realizar la estructura de la página web: HTML.
 └── Cifrar un mensaje (Funcionalidad).
 
 Sprint 2 (Semana 2)
 ├── Descifrar un mensaje (Funcionalidad).
-├── Borar los datos ingresados (Funcionalidad).
+├── Borrar los datos ingresados (Funcionalidad).
 ├── Diseñar el formato de la Interfaz.
 ├── Completar el "Cifrado" y "Descifrado" para letras en minúscula.
 └── Completar el "Cifrado" y "Descifrado" para otros caracteres y valores negativos.
@@ -89,43 +89,42 @@ Se puede visualizar el prototipo inicial del proyecto siguiendo el enlace:
 
 ## 7. Consideraciones técnicas
 Al ejecutar los tests (pruebas) usando el comando `npm test`, se verifica que el nivel de cobertura de los tests unitarios es del 100% en _statements_, _functions_, _lines_, y _branches_. 
-
 Se han realizado los cambios necesarios para permitir el uso de letras en minúsculas y caracteres como espacios, puntuación, ñ, etc, asi como valores negativos en el `offset` (Desplazamiento). 
 
-## 8. Consideraciones complementarias: Objetivos de aprendizaje y Checklist
+## 8. Objetivos de aprendizaje y Checklist
 Al realizar el proyecto se ha logrado principalmente los siguientes `objetivos de aprendizaje`:
 ### HTML
-- [x]Uso de HTML semántico.
+* [x]Uso de HTML semántico.
 ### CSS
-- [x]Uso de selectores de CSS.
-- [x]Modelo de caja (box model): borde, margen, padding.
+* [x]Uso de selectores de CSS.
+* [x]Modelo de caja (box model): borde, margen, padding.
 ### Web APIs
-- [x]Uso de selectores del DOM.
-- [ ]Manejo de eventos del DOM (listeners, propagación, delegación).
-- [ ]Manipulación dinámica del DOM.
+* [x]Uso de selectores del DOM.
+* [ ]Manejo de eventos del DOM (listeners, propagación, delegación).
+* [ ]Manipulación dinámica del DOM.
 ### JavaScript
-- [x]Tipos de datos primitivos.
-- [x]Strings (cadenas de caracteres).
-- [x]Variables (declaración, asignación, ámbito).
-- [x]Uso de condicionales (if-else, switch, operador ternario, lógica booleana).
-- [x]Uso de bucles/ciclos (while, for, for..of).
-- [x]Funciones (params, args, return).
-- [x]Pruebas unitarias (unit tests).
-- [ ]Módulos de ECMAScript (ES Modules).
-- [ ]Uso de linter (ESLINT).
-- [ ]Uso de identificadores descriptivos (Nomenclatura y Semántica).
+* [x]Tipos de datos primitivos.
+* [x]Strings (cadenas de caracteres).
+* [x]Variables (declaración, asignación, ámbito).
+* [x]Uso de condicionales (if-else, switch, operador ternario, lógica booleana).
+* [x]Uso de bucles/ciclos (while, for, for..of).
+* [x]Funciones (params, args, return).
+* [x]Pruebas unitarias (unit tests).
+* [ ]Módulos de ECMAScript (ES Modules).
+* [ ]Uso de linter (ESLINT).
+* [ ]Uso de identificadores descriptivos (Nomenclatura y Semántica).
 ### Control de Versiones (Git y GitHub)
-- [x]Git: Instalación y configuración.
-- [x]Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote).
-- [ ]GitHub: Creación de cuenta y repos, configuración de llaves SSH.
-- [x]GitHub: Despliegue con GitHub Pages.
+* [x]Git: Instalación y configuración.
+* [x]Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote).
+* [ ]GitHub: Creación de cuenta y repos, configuración de llaves SSH.
+* [x]GitHub: Despliegue con GitHub Pages.
 ### user-centricity
-- [ ]Diseñar un producto o servicio poniendo a la usuaria en el centro.
+* [ ]Diseñar un producto o servicio poniendo a la usuaria en el centro.
 ### product-design
-- [x]Crear prototipos de alta fidelidad que incluyan interacciones.
-- [ ]Seguir los principios básicos de diseño visual.
+* [x]Crear prototipos de alta fidelidad que incluyan interacciones.
+* [ ]Seguir los principios básicos de diseño visual.
 
-El proyecto cumple con los requerimientos obligatorios y opcionales`Checklist`:
+El proyecto cumple con los requerimientos obligatorios y opcionales del `Checklist`:
 ### Parte Obligatoria
 * [x] `README.md` incluye info sobre proceso y decisiones de diseño.
 * [x] `README.md` explica claramente quiénes son los usuarios y su relación con
