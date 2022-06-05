@@ -7,17 +7,13 @@
 /* html{
   scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
 /*  background-image: url("IMG/fondo4.jpg")} /*fondo de la pag*/
-
-body{
-  margin:0; 
-  scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
-  background-image: url("IMG/ff9.jpg"); /*fondo de la pag*/
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 1500px;
-  background-position: center;
+html{
   font-size: 16px;
- 
+  background-image: url("IMG/ff9.jpg"); /*fondo de la pag*/
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 90rem;
+  background-position: center;
 }
 
 header{
@@ -31,18 +27,25 @@ header{
   font-size: 1rem;
   /*backdrop-filter: blur(40px)*/ /*para filtro desenfocado*/
   position:fixed; /*para uqe la cabecera quede fija*/
-  left:0; /*sin margen a la izquierda*/
-  top:0; /*sinn margen arriba*/
+  left:0rem; /*sin margen a la izquierda*/
+  top:0rem; /*sinn margen arriba*/
   width: 100%; /*para que ocupe todo el ancho de la pag - right:0 tiene el mismo efecto*/
+}
+
+
+body{
+  margin:0; 
+  scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
+  font-size: 1rem;
 }
 
 .inicio{
   padding-top: 10.6rem;
-  margin-block-end: 12.5em;
+  margin-block-end: 12.5rem;
   width: 70rem;
 }
 
-.portada{
+ .portada{
   margin-top: 0rem;
   margin-left: 20rem;
   margin-block-end: 6.25rem;
@@ -51,7 +54,7 @@ header{
   background-color: rgba(255, 255, 255, 0.9);
   /*backdrop-filter: blur(20px);*/
   border:0.25rem solid rgb(165, 165, 165); /* separado seria: border-style:solid; border-color: white;*/
-  font-size: 1.8rem;
+  font-size: 1.8em;
 }
 
 section.inicio img.imagenMujeres{
@@ -65,6 +68,8 @@ section.inicio img.imagenMujeres{
   border-radius: 1.5rem; 
   margin: auto;    /*para centrar*/
   display: block;   /*para centrar*/
+  width: 20rem;
+  height: 13rem;
 }
 
 
@@ -181,6 +186,7 @@ textarea{
   border-radius: 0.75rem;
   padding: 0.44rem;
   text-align: center;
+  width: 22rem;
 }
 
 main{
@@ -231,10 +237,15 @@ h3{
   padding: 0.31rem;
 }
 
-@media (max-width: 500px) {
-body{
-  font-size: 9px;
-}
+@media (max-width:600px) {
+  html{
+    font-size: 6px;
+  }
 }
 
+@media (max-width:800px) {
+  html{
+    font-size: 9px;
+  }
+}
   
