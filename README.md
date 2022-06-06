@@ -44,6 +44,7 @@ Para la encriptación del mensaje se utiliza la fórmula matemática del Cifrado
 * `... % 26`: Es el residuo de 26.
 * `... +65` : Para obtener el nuevo código `ASCII`.
 Finalmente usando String.fromCharCode(código `ASCII`) obtenemos la letra cifrada. 
+![Fórmula_Cifrar_BriVane](https://user-images.githubusercontent.com/105663345/172266229-b83b0f78-5288-4feb-b958-7446744395cf.png)
 
 Para descifrar el mensaje se utiliza la fórmula matemática invertida, código `ASCII` y los métodos `charCodeAt()`y `String.fromCharCode()`. De modo que la fórmula desarrolada fue: 
 `[ {X-65} + {26-(N%26)} ] % 26 + 65` donde:
@@ -56,6 +57,7 @@ Para descifrar el mensaje se utiliza la fórmula matemática invertida, código 
 * `... % 26` : Es el nuevo residuo de 26.
 * `... +65`  : Para obtener el codigo ASCII de la letra descifrada.
 Finalmente usando String.fromCharCode (código `ASCII`) obtenemos la letra descifrada. 
+![Fóruma_Descifrar_BriVane](https://user-images.githubusercontent.com/105663345/172266243-cadd8b32-d60a-4163-afb1-2e5280620730.png)
 
 Para cifrar o descifrar el mensaje con letras en minúscula se utiliza las mismas fórmulas matemáticas pero sustituyendo el valor 65 (código `ASCII` de la letra `A` en mayúscula) por el de 97 (código `ASCII` de la letra `a` en minúscula):
 + Para cifrar un mensaje   : `(X - 97 + N) % 26 + 97`
