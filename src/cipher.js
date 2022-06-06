@@ -21,7 +21,7 @@ const cipher = {                          //Es un objeto - siempre con const
               camb=String.fromCharCode(Number(letra));
             }
       //console.log(camb);
-        resultar+=camb; 
+        resultar+=camb;  // += es un operador aritmetico (resultar=resultar+camb)
       //console.log(typeof(resultar));
       }
        //console.log(typeof(offser));

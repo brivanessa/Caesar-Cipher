@@ -109,8 +109,8 @@ margin-top: 1.8rem;
   height: 12.5rem;
   font-size: 2.56rem; /*tamaño de fuente*/
   text-align: center; 
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+  padding: 0.1rem 1.25rem;
+  
   text-decoration: none;
   margin-left: 0rem;
   margin-right: 4.37rem;
@@ -237,15 +237,11 @@ h3{
   padding: 0.31rem;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
   html{
-    font-size: 6px;
+    font-size: 7.5px;
   }
 }
 
-@media (max-width:800px) {
-  html{
-    font-size: 9px;
-  }
-}
+
   
