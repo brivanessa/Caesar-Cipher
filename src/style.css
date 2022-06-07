@@ -1,50 +1,34 @@
-
- /*La pseudo-clase :root de CSS selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento <html>*/ 
- /*  :root { 
-    background: #ECEAEA;
-  }*/
-
-/* html{
-  scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
-/*  background-image: url("IMG/fondo4.jpg")} /*fondo de la pag*/
 html{
   font-size: 16px;
-  background-image: url("IMG/ff9.jpg"); /*fondo de la pag*/
+  background-image: url("IMG/ff9.jpg"); 
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 90rem;
   background-position: center;
 }
-
 header{
   background-color: rgba(249, 249, 246, 0.8);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*tipo de letra*/
-  color: rgb(53, 79, 117);  /*color de letra*/
-  -webkit-text-stroke: 2px  rgb(53, 79, 117); /*borde al texto*/
-   /*padding-block: 0px;  /*padding estblece el espacio de relleno (entre el elemento y su borde)*/
-  padding-left: 1.6rem; /*margen interior izquierdo*/
+  color: rgb(53, 79, 117);  
+  -webkit-text-stroke: 2px  rgb(53, 79, 117);
+  padding-left: 1.6rem; 
   margin:0;
   font-size: 1rem;
-  /*backdrop-filter: blur(40px)*/ /*para filtro desenfocado*/
-  position:fixed; /*para uqe la cabecera quede fija*/
-  left:0rem; /*sin margen a la izquierda*/
-  top:0rem; /*sinn margen arriba*/
-  width: 100%; /*para que ocupe todo el ancho de la pag - right:0 tiene el mismo efecto*/
+  position:fixed; 
+  left:0rem; 
+  top:0rem;
+  width: 100%; 
 }
-
-
 body{
   margin:0; 
-  scroll-behavior: smooth; /*para saltar de una sección a otra con transicion lenta :) */
+  scroll-behavior: smooth; 
   font-size: 1rem;
 }
-
 .inicio{
   padding-top: 10.6rem;
   margin-block-end: 12.5rem;
   width: 70rem;
 }
-
  .portada{
   margin-top: 0rem;
   margin-left: 20rem;
@@ -52,132 +36,113 @@ body{
   padding: 2rem 2rem;
   border-radius: 0.75rem;
   background-color: rgba(255, 255, 255, 0.9);
-  /*backdrop-filter: blur(20px);*/
-  border:0.25rem solid rgb(165, 165, 165); /* separado seria: border-style:solid; border-color: white;*/
+  border:0.25rem solid rgb(165, 165, 165); 
   font-size: 1.8em;
 }
-
 section.inicio img.imagenMujeres{
   float: right;
   margin-left: 1.9rem;
   width: 14rem;
   border-radius: 0.75rem;
 }
-
 .imagen{
   border-radius: 1.5rem; 
-  margin: auto;    /*para centrar*/
-  display: block;   /*para centrar*/
+  margin: auto;  
+  display: block;  
   width: 20rem;
   height: 13rem;
 }
-
-
-
 h2{
 font-family:  'Gill Sans';
-color: rgb(53, 79, 117);  /*color de letra*/
--webkit-text-stroke: 0.12rem  rgb(53, 79, 117); /*borde al texto*/
+color: rgb(53, 79, 117);  
+-webkit-text-stroke: 0.12rem  rgb(53, 79, 117); 
 text-align: center;
 font-size: 3.1rem;
-/*text-indent: 20%; /*sangria*/
-line-height: 0rem; /*interlineado*/
+line-height: 0rem;
 margin-top: 1.8rem;
 }
-
 .button{
   background-color:  rgb(165, 165, 165);
   border-radius: 0.75rem;
-  border:0.37rem  solid gray; /* separado seria: border-style:solid; border-color: white;*/
-  width: 5.6rem; /*tamaño*/
-  font-size: 2.5rem; /*tamaño de fuente*/
+  border:0.37rem  solid gray; 
+  width: 5.6rem;
+  font-size: 2.5rem; 
   text-align: center;
   margin-top: 0.75rem;
 }
-
-.button:hover{                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+.button:hover{               
   background-color: white;  
  }
-
 .buttonGoTrailer{
   background-color: transparent;
-  font-family: "Impact"; /*tipo de letra*/
-  color: rgb(53, 79, 117);  /*color de letra*/
+  font-family: "Impact"; 
+  color: rgb(53, 79, 117); 
   border-radius: 0.75rem;
-  border:0.37rem solid rgb(53, 79, 117); /* separado seria: border-style:solid; border-color: white;*/
-  width: 6.25rem; /*tamaño*/
+  border:0.37rem solid rgb(53, 79, 117);
+  width: 6.25rem; 
   height: 12.5rem;
-  font-size: 2.56rem; /*tamaño de fuente*/
+  font-size: 2.56rem; 
   text-align: center; 
   padding: 0.1rem 1.25rem;
-  
   text-decoration: none;
   margin-left: 0rem;
   margin-right: 4.37rem;
 }
-.buttonGoTrailer:hover{                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+.buttonGoTrailer:hover{               
   background-color: rgb(53, 79, 117);
   color:white;  
- }
-
-
- .buttonBorrar{
+}
+.buttonBorrar{
   background-color: transparent;
-  font-family: "Arial"; /*tipo de letra*/
+  font-family: "Arial"; 
   border-radius: 0.75rem;
-  border:0.19rem  solid gray; /* separado seria: border-style:solid; border-color: white;*/
-  width: 6.25rem; /*tamaño*/
-  color: gray;  /*color de letra*/
-  font-size: 0.93rem; /*tamaño de fuente*/
+  border:0.19rem  solid gray; 
+  width: 6.25rem; 
+  color: gray; 
+  font-size: 0.93rem; 
   text-align: center;
   margin-left:13.12rem;
 }
-
 .buttonTop{
   background-color: transparent;
-  font-family: "Arial"; /*tipo de letra*/
-  color: rgb(53, 79, 117);  /*color de letra*/
+  font-family: "Arial"; 
+  color: rgb(53, 79, 117); 
   border-radius: 0.75rem;
-  border:0.19rem solid rgb(53, 79, 117); /* separado seria: border-style:solid; border-color: white;*/
-  width: 6.25rem; /*tamaño*/
+  border:0.19rem solid rgb(53, 79, 117); 
+  width: 6.25rem; 
   height: 5.6rem;
-  font-size: 0.93rem; /*tamaño de fuente*/
+  font-size: 0.93rem; 
   text-align: center; 
   padding: 0.13rem;
   text-decoration: none;
   margin-left: 0.62rem;
 }
-
-.buttonTop:hover {                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+.buttonTop:hover {               
   background-color: rgb(53, 79, 117);
   color:white;  
  }
-
- .buttonBorrar:hover {                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
-  background-color: gray;
+.buttonBorrar:hover {            
   border:0.19rem solid gray;
   color:white;  
  }
-
 .buttonCipher{
   background-color: rgba(244, 247, 78, 0.5);
-  font-family: 'Trebuchet MS'; /*tipo de letra*/
+  font-family: 'Trebuchet MS';
   border-radius: 0.75rem;
-  border:0.19rem  solid gray; /* separado seria: border-style:solid; border-color: white;*/
-  width: 10.6rem; /*tamaño*/
-  color: gray;  /*color de letra*/
-  font-size: 1.87rem; /*tamaño de fuente*/
+  border:0.19rem  solid gray; 
+  width: 10.6rem; 
+  color: gray; 
+  font-size: 1.87rem;
   text-align: center;
   margin-left: 0.94rem;
   margin-top: 0rem;
 }
-.buttonCipher:hover {                /* es una pseudo-clase que funciona cuando el se interactua con elemento tmbn hay button:active*/
+.buttonCipher:hover {              
   background-color: rgb(53, 79, 117);
   border:0.19rem solid  rgb(53, 79, 117);
   color:white; 
-  -webkit-text-stroke: 0.07rem  white; /*borde al texto*/ 
+  -webkit-text-stroke: 0.07rem  white; 
  }
-
 textarea{
   font-family: 'Gill Sans';
   font-size: 1.13rem;
@@ -188,9 +153,8 @@ textarea{
   text-align: center;
   width: 22rem;
 }
-
 main{
-  padding-top: 3rem; /*separacion entre contenedor y header*/
+  padding-top: 3rem;
 }
 .contenedor1, .contenedor2, .contenedor3 {
   float: left;
@@ -201,10 +165,9 @@ main{
   padding: 1.25rem;
   border-radius: 0.75rem;
   background-color: rgba(255, 255, 255, 0.9);
-  border:0.38rem solid rgb(165, 165, 165); /* separado seria: border-style:solid; border-color: white;*/
+  border:0.38rem solid rgb(165, 165, 165); 
   font-size: 1.87rem;
 }
-
 .piePagina{
   color: gray;
   font-family: 'Gill Sans';
@@ -214,17 +177,15 @@ main{
   background-color: transparent;
   
   border-radius: 0.75rem;
-  border:0.19rem; /* separado seria: border-style:solid; border-color: white;*/
+  border:0.19rem; 
   padding: 0.19rem;
 }
-
 p{
   color: black;
   font-family: 'Gill Sans';
   font-size: 1.13rem;
   text-align: justify;
 }
-
 h3{
   color:  rgb(53, 79, 117);
   font-family: courier;
@@ -233,7 +194,7 @@ h3{
 
   background-color: white;
   border-radius: 0.75rem;
-  border:0.19rem ; /* separado seria: border-style:solid; border-color: white;*/
+  border:0.19rem 
   padding: 0.31rem;
 }
 

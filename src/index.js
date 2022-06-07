@@ -1,24 +1,12 @@
 import cipher from './cipher.js';   //Siempre import va al inicio
-//console.log(cipher);
-//var resultado= cipher.encode(Number(prompt("offset")),prompt("string"));
-//console.log(resultado);
-//console.log("revisar");
-    //console.log(cipher.encode());
-    //console.log(cipher.encode(0));
-    //console.log(cipher.encode(null, []));
-    //console.log(cipher.encode(0,0));
-    //console.log(cipher.encode(33,'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
-
 
 //BOTONES PAGE 2 Contenedor 2
-
 let cipherCesar=document.getElementById("buttonCifrar");
 cipherCesar.addEventListener("click",mostrarPrompt);
 function mostrarPrompt(){
     let mensajeCifrar=prompt("Mensaje a Cifrar: ");
     let desplazamiento=prompt("Cada letra será reemplazada según este número fijo de posiciones. Desplazamiento:");
     let resultado= cipher.encode(Number(desplazamiento),mensajeCifrar);
-    //alert("Tu mensaje cifrado es: " +resultado);
     document.getElementById("resumen").value= "Tu mensaje para cifrar fue: "+"\n" + mensajeCifrar +"\n" +"\n" + " Con un desplazamiento de:" +"\n"+ desplazamiento +  " position(s).";
     document.getElementById("resultado").value= "Tu mensaje cifrado es: "+"\n" + resultado;
 }
@@ -29,7 +17,6 @@ function mostrarPromptDes(){
     let mensajeDescifrar=prompt("Mensaje a Descificar: ");
     let retrocede=prompt("Cada letra será reemplazada según este número fijo de posiciones. Desplazamiento:");
     let resultado= cipher.decode(Number(retrocede),mensajeDescifrar);
-    //alert("Tu mensaje cifrado es: " +resultado);
     document.getElementById("resumen").value= "Tu mensaje para descifrar fue: "+"\n" + mensajeDescifrar +"\n" +"\n" + " Con un desplazamiento de:" +"\n"+ retrocede +  " position(s).";
     document.getElementById("resultado").value= "Tu mensaje descifrado es: "+"\n" + resultado;
 }
@@ -43,10 +30,9 @@ function borrarTextarea(){
 
 
 // BOTONES PAGE 1
-///function mensaje1(){alert("vvvvvvvvvv")} //es para con onclick pero en este js no funciona (si funciona en script.js)
 //Botón Emoji Foquito 1
-var idea1=document.getElementById("buttonIdea1"); //estaba trabajando con onclic pero no funciona en este index.js pero si creo otro js si funciona (la diferencia es el tipo- este js es de tipo modulo)
-idea1.addEventListener("click", funcion1); //no puedo poner un alert dentro de add Event listener porque no lo reconoce y el alert sale al inicio y no cuando hago clic
+var idea1=document.getElementById("buttonIdea1"); 
+idea1.addEventListener("click", funcion1);
 function funcion1(){
   alert("¿QUÉ ES EL CIFRADO POR SUSTITUCIÓN?"+"\n"+"Es un tipo de cifrado en el que cada letra del texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.");
 }
@@ -56,6 +42,7 @@ idea2.addEventListener("click",funcion2);
 function funcion2(){
     alert("¿QUÉ ES EL CIFRADO CÉSAR?"+"\n"+"El cifrado César es una de las técnicas más simples para cifrar un mensaje y uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.");
 }
+
 
 // BOTONES PAGE 2 Contenedor 1
 //Botón Emoji Asustado de person1 (Mata Hari - Mh)
@@ -76,8 +63,6 @@ Mh3.addEventListener("click",funcionMh3);
 function funcionMh3(){
     alert("Se han producido series, películas y libros sobre su vida. Además de canciones y una aventura gráfica para PC (videojuegos).");
 }
-//Botón Emoji trailer de person1 (Mata Hari - Mh)
-
 
 
 // BOTONES PAGE 2 Contenedor 3

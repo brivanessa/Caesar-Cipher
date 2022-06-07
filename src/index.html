@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>        <!--información del doc. que no se muestra--> 
-    <meta charset="utf-8">  <!--elemento que especifica el conjunto de cracteres que el doc. puede usar, utf-8 es universal (incluye caract de cualquier idioma)--> 
+
+  <head>       
+    <meta charset="utf-8">  
     <title>DecipherHistory</title>  
-    <link rel="stylesheet" href="style.css" />  <!--especifica un estilo persistente o preferido--> 
+    <link rel="stylesheet" href="style.css" /> 
   </head>
 
   <body>
-    <header id="encabezado">  <!--contiene encabezados, logos, formularios de busqueda--> 
+    <header id="encabezado"> 
           <h1>DECIPHER <span>HISTORY</span></h1>
     </header> 
     
@@ -18,10 +19,8 @@
           <p>A lo largo de la historia la <em><strong>criptografía</strong></em> y su mala/buena utilización estuvieron implicados en la conspiración que condujo a condenas, encarcelamientos e incluso ejecuciones.</p>
           <p>Usando el cifrado por sustitución  descifraremos la identidad de 2 personajes de la historia.</p>  <br>
        
-          <!--input href="#page2" type="button" value="GO!"  id="buttonPlay"-->
           <a href="#page2" class="buttonGoTrailer">GO!</a>
           <input type="button" title="¿QUÉ ES EL CIFRADO POR SUSTITUCIÓN?"  value="🧐"  class="button" id="buttonIdea1">
-          <!--input type="button" value="💡"  id="buttonPlay" onclick="mensaje1()"> <!onclic solo funciona con script.js (creo que es pq no tiene type (module)) aunque igual el onclick inline en html no es una muy buena practica ni sostenible en el tiempo-->
           <input type="button" title="¿QUÉ ES EL CIFRADO CÉSAR?"  value="🧐"  class="button" id="buttonIdea2">
         </div>
     </section>
@@ -41,10 +40,8 @@
       <div id="cipherCesar" class="contenedor2">
           <h2>¿GUESS WHO?</h2>
           <textarea name="text" title="Cuadro resumen: Luego de hacer clic en DESCIFRAR o CIFRAR, aqui aparecerá el resumen de su requerimiento." id="resumen" cols="37" rows="9" disabled >Clic en DESCIFRAR: Para descifrar un mensaje. Clic en CIFRAR: Para cifrar un mensaje. </textarea>
-         <!--input type="text" id="escribir" class ="resumen"  -->
           <input type="button" value="DESCIFRAR" title="Para descifrar el nombre de los personajes: Copia el texto resaltado de amarillo y recuerda la clave." id="buttonDescifrar" class="buttonCipher">
           <input type="button" value="CIFRAR"  id="buttonCifrar" class="buttonCipher">
-          <!--input type="text" id="resultado"-->
           <textarea name="text" title="Aquí observarás el resultado de tu mensaje (descifrado/cifrado)." id="resultado" cols="37" rows="6"></textarea>
 
           <a href="#page1"  class="buttonTop" > ⬆TOP </a>
