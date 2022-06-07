@@ -123,6 +123,7 @@ margin-top: 1.8rem;
  }
 .buttonBorrar:hover {            
   border:0.19rem solid gray;
+  background-color: gray;
   color:white;  
  }
 .buttonCipher{
