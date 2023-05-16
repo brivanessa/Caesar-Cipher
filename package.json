@@ -10,6 +10,7 @@
     "test": "jest --verbose --coverage",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
     "start": "serve ./src",
+    "build": "serve ./src",
     "deploy": "gh-pages -d src"
   },
   "dependencies": {
