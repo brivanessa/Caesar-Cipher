@@ -29,36 +29,24 @@ function borrarTextarea(){
 }
 
 
-// BOTONES PAGE 1
-//Botón Emoji Foquito 1
-var idea1=document.getElementById("buttonIdea1"); 
-idea1.addEventListener("click", funcion1);
-function funcion1(){
-  alert("¿QUÉ ES EL CIFRADO POR SUSTITUCIÓN?"+"\n"+"Es un tipo de cifrado en el que cada letra del texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.");
-}
-//Botón Emoji Foquito 2
-var idea2=document.getElementById("buttonIdea2");
-idea2.addEventListener("click",funcion2);
-function funcion2(){
-    alert("¿QUÉ ES EL CIFRADO CÉSAR?"+"\n"+"El cifrado César es una de las técnicas más simples para cifrar un mensaje y uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.");
-}
+
 
 
 // BOTONES PAGE 2 Contenedor 1
 //Botón Emoji Asustado de person1 (Mata Hari - Mh)
-var Mh1=document.getElementById("buttonMh1");
+var Mh1=document.getElementById("buttonM1");
 Mh1.addEventListener("click",funcionMh1);
 function funcionMh1(){
     alert("En enero de 1917, el Mayor Kalle transmitió mensajes de radio a Berlín describiendo las actividades de una espía alemana con el nombre H-21 (código). Los mensajes estaban cifrados con un código que la inteligencia alemana sabía que los franceses ya habían descifrado, lo que sugiere que los mensajes fueron ideados con la intención de exponerla para que sea arrestada por los franceses. Fue ejecutada el 15 de octubre de 1917.");
 } 
 //Botón Emoji heart de person1 (Mata Hari - Mh)
-var Mh2=document.getElementById("buttonMh2");
+var Mh2=document.getElementById("buttonM2");
 Mh2.addEventListener("click",funcionMh2);
 function funcionMh2(){
     alert("«No sé si en el futuro se me recordará, pero si así fuera, que nadie me vea como a una víctima sino como alguien que nunca dejó de luchar con valentía y pagó el precio que le tocó pagar»");
 } 
 //Botón Emoji sorprendido de person1 (Mata Hari - Mh)
-var Mh3=document.getElementById("buttonMh3");
+var Mh3=document.getElementById("buttonM3");
 Mh3.addEventListener("click",funcionMh3);
 function funcionMh3(){
     alert("Se han producido series, películas y libros sobre su vida. Además de canciones y una aventura gráfica para PC (videojuegos).");
@@ -67,19 +55,19 @@ function funcionMh3(){
 
 // BOTONES PAGE 2 Contenedor 3
 //Botón Emoji Asustado de person2 (Maria Estuardo - Me)
-var Me1=document.getElementById("buttonMe1");
+const Me1=document.getElementById("button1");
 Me1.addEventListener("click",funcionMe1);
 function funcionMe1(){
-    alert("Fue condenada a muerte por conspirar contra su prima y murió en Inglaterra como una mártir católica. El origen fue la conspiración liderada por Anthony Babington cuyo fin era matar a la reina Isabel I. El servicio de contraespionaje de la corona inglesa obtuvo cartas en las que ella estaba al tanto de todo y lo aprobaba (aún hay controversia en relación a la veracidad de las cartas). En la redacción los conspiradores sustituían las letras por otras (cifrado), y algunas palabras se sustituían por símbolos (codificación).");
+  return  alert("Fue condenada a muerte por conspirar contra su prima y murió en Inglaterra como una mártir católica. El origen fue la conspiración liderada por Anthony Babington cuyo fin era matar a la reina Isabel I. El servicio de contraespionaje de la corona inglesa obtuvo cartas en las que ella estaba al tanto de todo y lo aprobaba (aún hay controversia en relación a la veracidad de las cartas). En la redacción los conspiradores sustituían las letras por otras (cifrado), y algunas palabras se sustituían por símbolos (codificación).");
 } 
 //Botón Emoji heart de person2 (Maria Estuardo - Me)
-var Me2=document.getElementById("buttonMe2");
+const Me2=document.getElementById("button2");
 Me2.addEventListener("click",funcionMe2);
 function funcionMe2(){
     alert("«...¿Creéis que denigraré mi posición, mi estatus, la familia de la que vengo... al aceptar tal requerimiento? ¡No! ¡Nunca! Por más torcido que parezca, mi corazón es firme y no sufrirá ninguna humillación»...«Mirad vuestras conciencias y recordad que el teatro mundial es más amplio que el reino de Inglaterra»");
 } 
 //Botón Emoji sorprendido de person2 (Maria Estuardo - Me)
-var Me3=document.getElementById("buttonMe3");
+const Me3=document.getElementById("button3");
 Me3.addEventListener("click",funcionMe3);
 function funcionMe3(){
     alert("Escritores y cineastas han usado la poesía, teatro, ópera y cine para retratar su historia. Una de sus últimas adptaciones tuvo 3 nominaciones a los Premios BAFTA 2019 y 2 nominaciones a los Premios Oscar 2019.");

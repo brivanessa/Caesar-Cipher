@@ -1,111 +1,102 @@
 html{
   font-size: 16px;
-  background-image: url("IMG/ff9.jpg"); 
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 90rem;
-  background-position: center;
+  background-color: rgb(53, 79, 117);
+  font-family: 'Cabin Sketch', sans-serif;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
 }
-header{
-  background-color: rgba(249, 249, 246, 0.8);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*tipo de letra*/
+#encabezado{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
   color: rgb(53, 79, 117);  
-  -webkit-text-stroke: 2px  rgb(53, 79, 117);
-  padding-left: 1.6rem; 
+  padding-left: 1.5rem;
+}
+
+header {
   margin:0;
-  font-size: 1rem;
-  position:fixed; 
+  font-size: 0.6rem;
+  padding-top: 0rem;
+  position:fixed;
   left:0rem; 
   top:0rem;
   width: 100%; 
 }
+footer{
+  color: white;  
+  padding-bottom: 1rem;
+}
+
+.curiosidades{
+  display: flex;
+
+}
+.curiosidad1, .curiosidad2 {
+  width: 50%;
+  padding: 18px;
+}
+
+mark{
+background-color:white;
+color: rgb(53, 79, 117);
+padding: 4px;
+}
+
+
 body{
   margin:0; 
-  scroll-behavior: smooth; 
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
 }
+
 .inicio{
-  padding-top: 10.6rem;
-  margin-block-end: 12.5rem;
-  width: 70rem;
+  padding-right: 2rem;
 }
- .portada{
-  margin-top: 0rem;
-  margin-left: 20rem;
-  margin-block-end: 6.25rem;
-  padding: 2rem 2rem;
-  border-radius: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  border:0.25rem solid rgb(165, 165, 165); 
-  font-size: 1.8em;
+
+.person,.decipherSection {
+  display: flex;
 }
-section.inicio img.imagenMujeres{
-  float: right;
-  margin-left: 1.9rem;
-  width: 14rem;
-  border-radius: 0.75rem;
-}
+
 .imagen{
-  border-radius: 1.5rem; 
   margin: auto;  
   display: block;  
   width: 20rem;
   height: 13rem;
 }
-h2{
-font-family:  'Gill Sans';
-color: rgb(53, 79, 117);  
--webkit-text-stroke: 0.12rem  rgb(53, 79, 117); 
-text-align: center;
-font-size: 3.1rem;
-line-height: 0rem;
-margin-top: 1.8rem;
-}
-.button{
-  background-color:  rgb(165, 165, 165);
-  border-radius: 0.75rem;
-  border:0.37rem  solid gray; 
-  width: 5.6rem;
-  font-size: 2.5rem; 
-  text-align: center;
-  margin-top: 0.75rem;
-}
-.button:hover{               
-  background-color: white;  
- }
-.buttonGoTrailer{
-  background-color: transparent;
-  font-family: "Impact"; 
-  color: rgb(53, 79, 117); 
-  border-radius: 0.75rem;
-  border:0.37rem solid rgb(53, 79, 117);
-  width: 6.25rem; 
-  height: 12.5rem;
-  font-size: 2.56rem; 
+
+.button, .buttonGoTrailer{
+  font-size: 2rem; 
   text-align: center; 
-  padding: 0.1rem 1.25rem;
   text-decoration: none;
-  margin-left: 0rem;
-  margin-right: 4.37rem;
+  border: 0rem;
+  background-color: transparent;
 }
-.buttonGoTrailer:hover{               
-  background-color: rgb(53, 79, 117);
-  color:white;  
+.button:hover{  
+  font-size: 2.2rem; 
+ }
+
+.buttonGoTrailer:hover{     
+  font-size: 2.2rem; 
+          
 }
+.buttons{
+  display:flex;
+  gap: 1rem;
+}
+
 .buttonBorrar{
   background-color: transparent;
-  font-family: "Arial"; 
   border-radius: 0.75rem;
   border:0.19rem  solid gray; 
   width: 6.25rem; 
   color: gray; 
   font-size: 0.93rem; 
   text-align: center;
-  margin-left:13.12rem;
 }
 .buttonTop{
   background-color: transparent;
-  font-family: "Arial"; 
   color: rgb(53, 79, 117); 
   border-radius: 0.75rem;
   border:0.19rem solid rgb(53, 79, 117); 
@@ -115,7 +106,6 @@ margin-top: 1.8rem;
   text-align: center; 
   padding: 0.13rem;
   text-decoration: none;
-  margin-left: 0.62rem;
 }
 .buttonTop:hover {               
   background-color: rgb(53, 79, 117);
@@ -127,8 +117,7 @@ margin-top: 1.8rem;
   color:white;  
  }
 .buttonCipher{
-  background-color: rgba(244, 247, 78, 0.5);
-  font-family: 'Trebuchet MS';
+  background-color: rgba(78, 247, 132, 0.5);
   border-radius: 0.75rem;
   border:0.19rem  solid gray; 
   width: 10.6rem; 
@@ -145,7 +134,6 @@ margin-top: 1.8rem;
   -webkit-text-stroke: 0.07rem  white; 
  }
 textarea{
-  font-family: 'Gill Sans';
   font-size: 1.13rem;
   margin-left: 0.6rem;
   margin-top: 0.6rem;
@@ -157,51 +145,38 @@ textarea{
 main{
   padding-top: 3rem;
 }
-.contenedor1, .contenedor2, .contenedor3 {
-  float: left;
-  width: 24rem;
-  height: 35rem;
-  margin-block-end: 1.4rem;
-  margin-left: 1.82rem;
-  padding: 1.25rem;
-  border-radius: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  border:0.38rem solid rgb(165, 165, 165); 
-  font-size: 1.87rem;
+.contenedor1, .contenedor2 {
+  height: auto;
+  margin-block-end: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.205);
+  border:0.10rem solid rgb(165, 165, 165); 
+  font-size: 0.8rem;
 }
-.piePagina{
-  color: gray;
-  font-family: 'Gill Sans';
-  text-decoration: none;
-  margin-left: 75rem;
-  margin-top: 0rem;
-  background-color: transparent;
-  
-  border-radius: 0.75rem;
-  border:0.19rem; 
-  padding: 0.19rem;
-}
-p{
-  color: black;
-  font-family: 'Gill Sans';
-  font-size: 1.13rem;
-  text-align: justify;
-}
-h3{
-  color:  rgb(53, 79, 117);
-  font-family: courier;
-  font-size: 1.25rem;
-  text-align:center;
 
-  background-color: white;
-  border-radius: 0.75rem;
-  border:0.19rem 
-  padding: 0.31rem;
+p{
+  color:white;
+  font-size: 1rem;
+}
+h3, h2{
+  color: white;
+  font-size: 1.25rem;
+  border:0.19rem ;
 }
 
 @media (max-width:700px) {
   html{
-    font-size: 7.5px;
+    font-size: 14px;
+  }
+  .curiosidades, .decipherSection{
+    flex-direction: column;
+  }
+  .curiosidad1, .curiosidad2 {
+    width: auto;
+    padding: 0px;
+  }
+  .imagen{
+    display: none;
   }
 }
 
