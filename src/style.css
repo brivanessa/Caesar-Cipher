@@ -7,34 +7,282 @@ html{
 
 }
 #encabezado{
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(9, 26, 52, 0.752);
   width: 100%;
+  position:fixed;
   height: auto;
-  color: rgb(53, 79, 117);  
+  color: aquamarine;  
   padding-left: 1.5rem;
 }
 
 header {
-  margin:0;
-  font-size: 0.6rem;
-  padding-top: 0rem;
-  position:fixed;
+  font-size: 1.5rem;
   left:0rem; 
   top:0rem;
-  width: 100%; 
+  width: 100%;
 }
+
 footer{
-  color: white;  
-  padding-bottom: 1rem;
+  margin-top: 1rem;
+  width: auto;
+  color: aquamarine;
+}
+main{
+  margin-top: 4rem;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
 }
 
-.curiosidades{
+.mapa{
+  width: 100%;
+  display:flex;
+  justify-content:center;
+}
+.cuadro{
+  padding: 0.5rem;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.622);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.cuadro-2{
+  width: 50%;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.622);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.def{
   display: flex;
+  flex-direction: row;
+}
+.casilla{
+  width: 50%;
+}
+.conector{
+  height: 1rem;
+  padding: 0.5rem;
+  width: 50%;
+  border-left: 0.10rem solid white;  
+  color: white;
+}
+
+p, h1{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-size: 1rem;
+}
+
+.conectores, .cuadros-2{
+  display:flex;
+}
+.conector-def{
+  width: 25%;
+  height: 1rem;
+}
+.impar-conector{
+  border-left: 0.10rem solid white;  
+  border-top: 0.10rem solid white ;
+  color: white; 
+  padding: 0.5rem;
+  
+}
+.par-conector{
+  border-top: 0.10rem solid white ;
+  color: white; 
+  padding: 0.5rem;
+}
+
+.impar-conector-2{
+  border-left: 0.10rem solid white;  
+  border-bottom: 0.10rem solid white ;
+  color: white; 
+  padding: 0.5rem;
+  
+}
+.par-conector-2{
+  border-bottom: 0.10rem solid white ;
+  color: white; 
+  padding: 0.5rem;
+}
+.conector-2{
+  padding: 0.5rem;
+  border-left: 0.10rem solid white;  
+  color: white;
+  height: 1.1rem;
 
 }
+.ejemplos{
+  text-align: left;
+}
+
+.descifrar, .personajes{
+  margin-top: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.descifrar{
+  background-color:rgb(9, 26, 52);
+  border: 1px solid aquamarine;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.personajes{
+  flex-direction: row;
+  gap:3%
+}
+h2, .solución, h3{
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+h3{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.button{
+  background-color: transparent;
+  border: 0px;
+  font-size: 1rem;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap:10%;
+  margin-bottom: 5%;
+}
+.button-1{
+  padding: 0.5rem;
+  width: 50%;
+  border: 1px solid white;
+  background-color: white;
+  font-family: 'Cabin Sketch', sans-serif;
+  font-size: 1rem;
+  color:rgb(53, 79, 117);
+  border-radius: 0.5rem;
+
+}
+.button-1:hover{
+  background-color: rgb(199, 248, 230);
+  
+}
+.textarea-1{
+  background-color: transparent;
+  border: 1px solid aquamarine;
+  border-radius: 0.5rem;
+  width: 48%;
+  padding: 0.5rem;
+  color:rgba(255, 255, 255, 0.652);
+}
+.textarea-2{
+  background-color: transparent;
+  border: 1px solid aquamarine;
+  border-radius: 0.5rem;
+  width:  auto;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color:rgba(255, 255, 255, 0.652);
+}
+.message{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultado{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+.decipherSection{
+  display: flex;
+  gap: 2rem;
+
+}
+
+img{
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  object-fit: cover
+}
+
+.person{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(9, 26, 52);
+  border: 1px solid aquamarine;
+  border-radius: 0.5rem;
+  color:rgb(53, 79, 117);
+  padding: 1rem;
+}
+
+mark{
+  background-color: aquamarine;
+}
+
+@media (max-width:800px) {
+  html{
+    font-size: 14px;
+  }
+  .decipherSection, .resultado{
+    flex-direction: column;
+    gap:1rem
+  }
+ 
+  .descifrar, .personajes, .resultado, .message {
+    width: 100%;
+  }
+  .textarea-1, .textarea-2{
+    width:auto
+  }
+  .personajes{
+    flex-direction: column;
+  }
+  .person, .descifrar{
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+
+}
+
+/* 
+
+
+.curiosidades, .person{
+  display: flex;
+  gap: 18px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+.person {
+  width: 30%;
+  flex-direction: column;
+  height: auto;
+  margin-block-end: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.205);
+  border:0.10rem solid rgb(165, 165, 165); 
+  font-size: 0.8rem;
+}
+
 .curiosidad1, .curiosidad2 {
   width: 50%;
-  padding: 18px;
 }
 
 mark{
@@ -43,7 +291,6 @@ color: rgb(53, 79, 117);
 padding: 4px;
 }
 
-
 body{
   margin:0; 
   font-size: 1rem;
@@ -51,19 +298,13 @@ body{
   flex-direction: column;
 }
 
-.inicio{
-  padding-right: 2rem;
-}
-
-.person,.decipherSection {
-  display: flex;
-}
 
 .imagen{
   margin: auto;  
   display: block;  
-  width: 20rem;
-  height: 13rem;
+  width: 25%;
+  height: auto;
+  border-radius: 16px;
 }
 
 .button, .buttonGoTrailer{
@@ -145,23 +386,20 @@ textarea{
 main{
   padding-top: 3rem;
 }
-.contenedor1, .contenedor2 {
-  height: auto;
-  margin-block-end: 1rem;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.205);
-  border:0.10rem solid rgb(165, 165, 165); 
-  font-size: 0.8rem;
-}
+
 
 p{
   color:white;
   font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 h3, h2{
   color: white;
   font-size: 1.25rem;
   border:0.19rem ;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 @media (max-width:700px) {
@@ -170,9 +408,15 @@ h3, h2{
   }
   .curiosidades, .decipherSection{
     flex-direction: column;
+    gap: 3px;
   }
-  .curiosidad1, .curiosidad2 {
+  .curiosidad1, .curiosidad2, .personajes, .descifrar {
     width: auto;
+    padding: 0px;
+  }
+ .personajes {
+    display:flex;
+  flex-direction: row;
     padding: 0px;
   }
   .imagen{
@@ -181,4 +425,4 @@ h3, h2{
 }
 
 
-  
+   */
